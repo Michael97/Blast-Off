@@ -11,7 +11,7 @@ public class NextZoneParticleEffect : MonoBehaviour
 {
     #region Public Variables
 
-    public ObjectSpawnerScript ObjectSpawnerScript;
+    public ObjectSpawner ObjectSpawnerScript;
     
 
     #endregion

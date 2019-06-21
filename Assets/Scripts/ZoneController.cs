@@ -11,9 +11,10 @@ public class ZoneController : MonoBehaviour
 {
     #region Public Variables
     public int ZoneLevel;
+    public int BaseObstacleCount;
 
     public ColorController ColorScript;
-    public ObjectSpawnerScript ObjectSpawnerScript;
+    public ObjectSpawner ObjectSpawnerScript;
 
     public ParticleSystem[] ParticleSystems;
 
@@ -46,9 +47,6 @@ public class ZoneController : MonoBehaviour
 
     private void Awake()
     {
-        //Update the color 
-        //ColorScript.ChangeColor();
-
         //Start the particle systems
         for (int i = 0; i < ParticleSystems.Length; i++)
         {
@@ -101,7 +99,7 @@ public class ZoneController : MonoBehaviour
     {
         ZoneLevel = 1;
 
-        zoneObstacleCount = 11;
+        zoneObstacleCount = BaseObstacleCount + ZoneLevel;
 
         //Update the obstacles left 
         ObjectSpawnerScript.obstaclesLeft = zoneObstacleCount;
@@ -114,6 +112,9 @@ public class ZoneController : MonoBehaviour
         {
             ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
         }
+
+        nextZone = false;
+        timer = 10.0f;
     }
 
     #endregion

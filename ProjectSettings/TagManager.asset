@@ -15,6 +15,7 @@ TagManager:
   - PlayerSpawner
   - ObjectController
   - ColorController
+  - DynamicJoystick
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,7 @@ public class MainMenu : SimpleMenu<MainMenu>
 {
     public void OnPlayPressed()
     {
-        GameControllerScript gameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControllerScript>();
+        GameController gameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         gameScript.RestartGame();
         Hide();
         Time.timeScale = 1;
