@@ -22,7 +22,7 @@ public class ColorScript : MonoBehaviour
     [SerializeField]
     private SpriteRenderer spriteRenderer;
     [SerializeField]
-    private ParticleSystem particleSystem;
+    private new ParticleSystem particleSystem;
 
     #endregion
 

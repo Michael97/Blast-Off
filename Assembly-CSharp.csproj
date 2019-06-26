@@ -61,23 +61,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Scripts\Button Scripts\BaseButtonController.cs" />
+    <Compile Include="Assets\Scripts\Button Scripts\LeftButtonController.cs" />
+    <Compile Include="Assets\Scripts\Button Scripts\RightButtonController.cs" />
+    <Compile Include="Assets\Scripts\Button Scripts\UpButtonController.cs" />
     <Compile Include="Assets\Scripts\ColorController.cs" />
     <Compile Include="Assets\Scripts\ColorScript.cs" />
     <Compile Include="Assets\Scripts\DebrisSpawner.cs" />
-    <Compile Include="Assets\Scripts\DestoryTimer.cs" />
-    <Compile Include="Assets\Scripts\DisableTimer.cs" />
-    <Compile Include="Assets\Scripts\Entity.cs" />
-    <Compile Include="Assets\Scripts\EntityState.cs" />
     <Compile Include="Assets\Scripts\FPSTarget.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\HighscoresController.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\AwesomeMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu Scripts\DeathMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\GameMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MenuManagerScripts\Menu.cs" />
@@ -91,8 +86,13 @@
     <Compile Include="Assets\Scripts\ObjectRotation.cs" />
     <Compile Include="Assets\Scripts\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Player\Entity.cs" />
+    <Compile Include="Assets\Scripts\Player\EntityState.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerSpawner.cs" />
+    <Compile Include="Assets\Scripts\Timers\DestoryTimer.cs" />
+    <Compile Include="Assets\Scripts\Timers\DisableTimer.cs" />
+    <Compile Include="Assets\Scripts\Timers\Timer.cs" />
     <Compile Include="Assets\Scripts\ZoneController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Michael Thomas Portfolio/Blast Off/Blast Off/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

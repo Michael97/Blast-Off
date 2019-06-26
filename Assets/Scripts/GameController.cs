@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour {
 
     #region Private Variables
 
-    private int points;
+    public int points;
 
     #endregion
 

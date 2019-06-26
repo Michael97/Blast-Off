@@ -16,6 +16,9 @@ TagManager:
   - ObjectController
   - ColorController
   - DynamicJoystick
+  - MovementController
+  - GameMenu
+  - HighscoreController
   layers:
   - Default
   - TransparentFX

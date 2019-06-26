@@ -12,7 +12,7 @@ public class Pickup : MonoBehaviour {
     #region Public Variables
 
     public int points;
-    public ParticleSystem particleSystem;
+    public new ParticleSystem particleSystem;
 
     #endregion
 

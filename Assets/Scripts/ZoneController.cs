@@ -26,7 +26,10 @@ public class ZoneController : MonoBehaviour
     [SerializeField]
     private int zoneObstacleCount;
 
-    private float timer;
+    //private float timer;
+
+    private Timer timer;
+
     [SerializeField]
     private bool nextZone;
 
@@ -52,6 +55,8 @@ public class ZoneController : MonoBehaviour
         {
             ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
         }
+
+        timer = new Timer(10.0f);
     }
 
 
@@ -59,9 +64,9 @@ public class ZoneController : MonoBehaviour
     {
         if (nextZone)
         {
-            timer -= Time.deltaTime;
+            timer.Update();
 
-            if (timer <= 0)
+            if (timer.GetHasFinished() == true)
             {
                 //Update the color 
                 ColorScript.ChangeColor();
@@ -92,7 +97,8 @@ public class ZoneController : MonoBehaviour
         ObjectSpawnerScript.obstaclesLeft = zoneObstacleCount;
        
         nextZone = true;
-        timer = 10.0f;
+
+        timer.ResetTimer();
     }
 
     public void ResetZone()
@@ -114,7 +120,8 @@ public class ZoneController : MonoBehaviour
         }
 
         nextZone = false;
-        timer = 10.0f;
+
+        timer.ResetTimer();
     }
 
     #endregion

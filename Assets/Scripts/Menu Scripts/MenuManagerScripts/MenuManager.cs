@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
+    public DeathMenu DeathMenuPrefab;
     public MainMenu MainMenuPrefab;
     public GameMenu GameMenuPrefab;
     public PauseMenu PauseMenuPrefab;
@@ -34,6 +35,7 @@ public class MenuManager : MonoBehaviour
 
     public void OpenMenu(Menu instance)
     {
+        Debug.Log(instance.name);
         // De-activate top menu
         if (menuStack.Count > 0)
         {
@@ -52,7 +54,6 @@ public class MenuManager : MonoBehaviour
             var previousCanvas = menuStack.Peek().GetComponent<Canvas>();
             topCanvas.sortingOrder = previousCanvas.sortingOrder + 1;
         }
-
         menuStack.Push(instance);
     }
 
