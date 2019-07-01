@@ -89,6 +89,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 271dd15d505bac64d979b222fc332950 Assembly-CSharp.dll:.PlayerSpawner
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HighscoresController
 9e386431931116b72c46b3e1f32f17c4 Assembly-CSharp.dll:.ObjectSpawner
 362fa915362ff7947c30573313ed882b Assembly-CSharp.dll:.DestoryTimer
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -172,6 +173,7 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 20b49d0d10ff5f23239470e8b676cf2a Assembly-CSharp.dll:.FPSTarget
 6d994c0cade550cf10222f58cbadd055 Assembly-CSharp.dll:.DisableTimer
+96737ecdf31ae884918406fed2f427d2 Assembly-CSharp.dll:.DeathMenu
 1f46aad187eff42c4e96cbf3bf6ce31f Assembly-CSharp.dll:.UpButtonController
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 9d37e36fb98bda0394893ba93ddec71e Assembly-CSharp.dll:.ObjectPoolScript
@@ -182,6 +184,4 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 14b204e468ec969a6fc18cec8deaf4c9 Assembly-CSharp.dll:.ZoneController
-582e90756ac114babf6413b9fb7d0648 Assembly-CSharp.dll:.MenuManager
-96737ecdf31ae884918406fed2f427d2 Assembly-CSharp.dll:.DeathMenu
-ef9d2a7da3bead4dcb596052b5ddb49d Assembly-CSharp.dll:.HighscoresController
+0f8eb7e82469b24a6f58aba550141b49 Assembly-CSharp.dll:.MenuManager

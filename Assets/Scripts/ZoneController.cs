@@ -6,6 +6,7 @@
 //\===========================================================================================================================================
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ZoneController : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class ZoneController : MonoBehaviour
     public ObjectSpawner ObjectSpawnerScript;
 
     public ParticleSystem[] ParticleSystems;
+
+    public Text CompleteLevelTextObject;
+    public ParticleSystem particlesystem;
+    private TextManager ZoneCompleteText;
 
     #endregion
 
@@ -62,6 +67,17 @@ public class ZoneController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Null check 
+        if (ZoneCompleteText != null)
+        {
+            //Update the instance
+            ZoneCompleteText.Update();
+
+            //Check to see if we still need the object
+            if (!ZoneCompleteText.DisplayText)
+                ZoneCompleteText = null; //Set to null, garbage collector kills this
+        }
+
         if (nextZone)
         {
             timer.Update();
@@ -74,6 +90,11 @@ public class ZoneController : MonoBehaviour
                 ResetParticleSystems();
                 
                 nextZone = false;
+
+                string tempString = "Completed Level " + (ZoneLevel - 1);
+
+                ZoneCompleteText = new TextManager(CompleteLevelTextObject,
+                    particlesystem, tempString, 0.5f, 4.0f);
             }
         }
     }
@@ -105,8 +126,8 @@ public class ZoneController : MonoBehaviour
     {
         ZoneLevel = 1;
 
-        zoneObstacleCount = BaseObstacleCount + ZoneLevel;
-
+        //zoneObstacleCount = BaseObstacleCount + ZoneLevel;
+        zoneObstacleCount = ZoneLevel;
         //Update the obstacles left 
         ObjectSpawnerScript.obstaclesLeft = zoneObstacleCount;
 

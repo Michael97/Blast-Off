@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\Timers\DestoryTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\DisableTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\Timer.cs" />
+    <Compile Include="Assets\Scripts\Tools\TextManager.cs" />
     <Compile Include="Assets\Scripts\ZoneController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Michael Thomas Portfolio/Blast Off/Blast Off/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
