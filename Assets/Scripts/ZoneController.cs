@@ -62,6 +62,8 @@ public class ZoneController : MonoBehaviour
         }
 
         timer = new Timer(10.0f);
+
+        
     }
 
 
@@ -75,13 +77,13 @@ public class ZoneController : MonoBehaviour
 
             //Check to see if we still need the object
             if (!ZoneCompleteText.DisplayText)
+            {
                 ZoneCompleteText = null; //Set to null, garbage collector kills this
+            }
         }
 
         if (nextZone)
         {
-            timer.Update();
-
             if (timer.GetHasFinished() == true)
             {
                 //Update the color 
@@ -94,8 +96,11 @@ public class ZoneController : MonoBehaviour
                 string tempString = "Completed Level " + (ZoneLevel - 1);
 
                 ZoneCompleteText = new TextManager(CompleteLevelTextObject,
-                    particlesystem, tempString, 0.5f, 4.0f);
+                        particlesystem, tempString, 0.5f, 4.0f);
             }
+            else
+                timer.Update();
+
         }
     }
 

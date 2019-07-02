@@ -63,5 +63,10 @@ public class Timer
     {
         return currentTimerCount;
     }
+
+    public void Dispose()
+    {
+
+    }
 }
 

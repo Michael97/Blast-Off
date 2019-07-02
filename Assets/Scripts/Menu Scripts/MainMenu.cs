@@ -16,6 +16,11 @@ public class MainMenu : SimpleMenu<MainMenu>
         OptionsMenu.Show();
     }
 
+    public void OnHighscoresClick()
+    {
+        HighscoresMenu.Show();
+    }
+
     public override void OnBackPressed()
     {
         Application.Quit();

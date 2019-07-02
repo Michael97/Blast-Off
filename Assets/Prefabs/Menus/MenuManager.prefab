@@ -53,3 +53,5 @@ MonoBehaviour:
     type: 3}
   OptionsMenuPrefab: {fileID: 114109697501719388, guid: 279b1c9a4479b944a84cbca7227cdf10,
     type: 3}
+  HighscoresMenuPrefab: {fileID: 901216734517012556, guid: 091899322d9308648855f76e45ecea8d,
+    type: 3}

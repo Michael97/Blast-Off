@@ -12,7 +12,6 @@ public class TextManager
 
     public bool DisplayText;
 
-
     public TextManager(Text a_TextObject, ParticleSystem a_particleSystem,
         string a_text, float a_StartDelayCount, float a_EndDelayCount)
     {
@@ -29,8 +28,6 @@ public class TextManager
 
     public void Update()
     {
-        Debug.Log("we living!");
-
         //if displaytext == false
         if (!DisplayText)
             return; //early out
@@ -54,7 +51,8 @@ public class TextManager
                 TextObject.text = "";
                 TextObject.enabled = false;
                 DisplayText = false;
-                
+                EndDelayTimer = null;
+                StartDelayTimer = null;
             }
         }
     }
