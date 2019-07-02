@@ -52,6 +52,8 @@ public class ObjectSpawner : MonoBehaviour {
     //Run when the game level starts
     public void SpawnerStart()
     {
+        shouldSpawnObject = true;
+
         //Call SpawnNewObject after 2 secs, every 5 secs
         InvokeRepeating("SpawnNewObject", 2.0f, 5.0f);
 

@@ -4,8 +4,13 @@ public class GameMenu : SimpleMenu<GameMenu>
 {
     public override void OnBackPressed()
     {
-        Time.timeScale = 0;
-        PauseMenu.Show();
+        Hide();
+        MainMenu.Show();
+    }
+
+    public void OnResetPressed()
+    {
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().RestartGame();
     }
 
     public void OnDeath()

@@ -131,8 +131,8 @@ public class ZoneController : MonoBehaviour
     {
         ZoneLevel = 1;
 
-        //zoneObstacleCount = BaseObstacleCount + ZoneLevel;
-        zoneObstacleCount = ZoneLevel;
+        zoneObstacleCount = BaseObstacleCount + ZoneLevel;
+
         //Update the obstacles left 
         ObjectSpawnerScript.obstaclesLeft = zoneObstacleCount;
 
