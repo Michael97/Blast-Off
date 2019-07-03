@@ -30,6 +30,7 @@ public class DeathMenu : SimpleMenu<DeathMenu>
         gameScript.RestartGame();
         Time.timeScale = 1;
         Hide();
+        GameMenu.Show();
     }
 
     public void OnQuitPressed()

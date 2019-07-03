@@ -9,12 +9,14 @@ using UnityEngine;
 
 public class ObjectMovement : MonoBehaviour {
 
+    public float Speed;
+
     #region Private Methods
 
     // Update is called once per frame
     void FixedUpdate () {
         //Move downwards
-        transform.Translate(Vector3.down * Time.deltaTime);
+        transform.Translate(Vector3.down * Speed * Time.deltaTime);
     }
 
     #endregion

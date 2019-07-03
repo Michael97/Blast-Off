@@ -12,8 +12,7 @@ public class PlayerController : Entity
 
     #region Public Variables
 
-    public float movementSpeed;
-    public float boosterSpeed;
+    public float MovementSpeed;
 
     public float HortizontalDirection;
     public float VerticalDirection;
@@ -31,7 +30,7 @@ public class PlayerController : Entity
     //Updates the position of the object
     private void MoveDirection()
     {
-        gameObject.transform.position += new Vector3(HortizontalDirection * movementSpeed * Time.deltaTime, VerticalDirection * boosterSpeed * Time.deltaTime, gameObject.transform.position.z);
+        gameObject.transform.position += new Vector3(HortizontalDirection * MovementSpeed * Time.deltaTime, 0.0f, 0.0f);
     }
 
     #endregion

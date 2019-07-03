@@ -61,7 +61,7 @@ public class ZoneController : MonoBehaviour
             ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
         }
 
-        timer = new Timer(10.0f);
+        timer = new Timer(3.0f);
 
         
     }

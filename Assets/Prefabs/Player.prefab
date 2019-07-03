@@ -98,8 +98,7 @@ MonoBehaviour:
   deadParticleSystem: {fileID: 198391588324613410, guid: 3e2720e12eff95c45ab92b8d5b4cccd4,
     type: 3}
   entityState: 0
-  movementSpeed: 3
-  boosterSpeed: 3
+  MovementSpeed: 5
   HortizontalDirection: 0
   VerticalDirection: 0
 --- !u!58 &58072563389977778
