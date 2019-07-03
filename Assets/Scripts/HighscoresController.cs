@@ -5,7 +5,9 @@ public class HighscoresController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("HighScore", 0);
+        //if we havent set a highscore on the system yet, then set it.
+        if (PlayerPrefs.HasKey("HighScore") == false)
+            PlayerPrefs.SetInt("HighScore", 0);
     }
 
     public int IsNewHighscore(int a_score)

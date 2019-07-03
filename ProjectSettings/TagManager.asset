@@ -19,6 +19,7 @@ TagManager:
   - MovementController
   - GameMenu
   - HighscoreController
+  - HighscoreNumber
   layers:
   - Default
   - TransparentFX

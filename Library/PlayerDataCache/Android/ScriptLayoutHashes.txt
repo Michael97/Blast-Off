@@ -135,6 +135,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 6521b3a557d968153ee6501381428277 Assembly-CSharp.dll:.GameController
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+0db47584045bd90e80539b1bebec2b16 Assembly-CSharp.dll:.HighscoresMenu
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ObjectMovement
 a4e026e4cb98a58694f83748b4215411 Assembly-CSharp.dll:.AwesomeMenu
@@ -183,5 +184,5 @@ d9254b31c052c6c5a70cf34a4b56a004 Assembly-CSharp.dll:.PlayerController
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-14b204e468ec969a6fc18cec8deaf4c9 Assembly-CSharp.dll:.ZoneController
-0f8eb7e82469b24a6f58aba550141b49 Assembly-CSharp.dll:.MenuManager
+aa7c84487aaf9c5e4cf0c997e578d989 Assembly-CSharp.dll:.ZoneController
+cdd0300a1720ca826447f7bffbd8e4ab Assembly-CSharp.dll:.MenuManager

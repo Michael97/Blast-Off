@@ -11108,7 +11108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ZoneLevel: 0
-  BaseObstacleCount: 10
+  BaseObstacleCount: 0
   ColorScript: {fileID: 1969347539}
   ObjectSpawnerScript: {fileID: 1473899416}
   ParticleSystems:
