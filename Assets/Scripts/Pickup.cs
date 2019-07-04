@@ -22,7 +22,6 @@ public class Pickup : MonoBehaviour {
     public void OnEnable()
     {
         gameObject.SetActive(true);
-        
     }
 
     public void PickedUp()
@@ -30,7 +29,7 @@ public class Pickup : MonoBehaviour {
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().AddScore(points);
         Instantiate(particleSystem, this.gameObject.transform.position, this.gameObject.transform.rotation);
         gameObject.SetActive(false);
-       
+        Handheld.Vibrate();
     }
 
     #endregion

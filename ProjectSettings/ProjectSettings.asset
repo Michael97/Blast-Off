@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: JustTableSalt
   productName: BlastOff
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -594,7 +594,7 @@ PlayerSettings:
   incrementalIl2cppBuild: {}
   allowUnsafeCode: 0
   additionalIl2CppArgs: 
-  scriptingRuntimeVersion: 0
+  scriptingRuntimeVersion: 1
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
@@ -656,7 +656,8 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -675,11 +676,11 @@ PlayerSettings:
   facebookStatus: 1
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
-  apiCompatibilityLevel: 2
-  cloudProjectId: 
+  apiCompatibilityLevel: 6
+  cloudProjectId: 992b7e49-748c-49e3-9d51-9ef960707752
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: BlastOff
+  organizationId: just-table-salt
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

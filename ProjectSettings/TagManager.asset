@@ -20,6 +20,7 @@ TagManager:
   - GameMenu
   - HighscoreController
   - HighscoreNumber
+  - ZoneController
   layers:
   - Default
   - TransparentFX

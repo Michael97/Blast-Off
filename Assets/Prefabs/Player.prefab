@@ -95,8 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655b921eb3f174044ae56df53a2155b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadParticleSystem: {fileID: 198391588324613410, guid: 3e2720e12eff95c45ab92b8d5b4cccd4,
-    type: 3}
+  deadParticleSystem: {fileID: 134, guid: 3e2720e12eff95c45ab92b8d5b4cccd4, type: 3}
   entityState: 0
   MovementSpeed: 5
   HortizontalDirection: 0

@@ -23,6 +23,8 @@ public class ZoneController : MonoBehaviour
     public ParticleSystem particlesystem;
     private TextManager ZoneCompleteText;
 
+    public PlayerController PlayerControllerScript;
+
     #endregion
 
 
@@ -35,8 +37,7 @@ public class ZoneController : MonoBehaviour
 
     private Timer timer;
 
-    [SerializeField]
-    private bool nextZone;
+    public bool nextZone;
 
     #endregion
 

@@ -90,9 +90,9 @@ public class NextZoneParticleEffect : MonoBehaviour
     private void FixedUpdate()
     {
         if (shouldIncrease)
-            Increase(8.0f);
+            Increase(4.0f);
         else if (shouldDecrease)
-            Decrease(3.0f);
+            Decrease(1.5f);
     }
 
     #endregion

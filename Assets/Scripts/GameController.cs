@@ -23,6 +23,9 @@ public class GameController : MonoBehaviour {
 
     public ZoneController ZoneScript;
 
+    public int DeathCount;
+    public AdvertController AdvertScript;
+
     #endregion
 
 
@@ -30,6 +33,14 @@ public class GameController : MonoBehaviour {
 
     public void RestartGame()
     {
+        DeathCount++;
+
+        if (DeathCount >= 3)
+        {
+            AdvertScript.ShowAd();
+            DeathCount = 0;
+        }
+
         //Grab the current play and object controller
         GameObject currentPlayer = GameObject.FindGameObjectWithTag("Player");
         GameObject objectController = GameObject.FindGameObjectWithTag("ObjectController");
@@ -96,7 +107,7 @@ public class GameController : MonoBehaviour {
     //Called to update the UI score
     private void UpdateScore()
     {
-        scoreText.text = "Points: " + points;
+        scoreText.text = "Points " + points;
     }
 
     #endregion

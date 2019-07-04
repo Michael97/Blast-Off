@@ -15,7 +15,7 @@ public class GameMenu : SimpleMenu<GameMenu>
 
     public void OnDeath()
     {
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         Hide();
         DeathMenu.Show();
     }

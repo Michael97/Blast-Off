@@ -61,7 +61,9 @@ abstract public class Entity : MonoBehaviour
     {
         //Set the entity state to dead
         entityState = EntityState.State.Dead;
-        
+
+        Handheld.Vibrate();
+
         //Disable the renderer and collider
         gameObject.GetComponent<Renderer>().enabled = false;
         gameObject.GetComponent<Collider2D>().enabled = false;
@@ -72,8 +74,10 @@ abstract public class Entity : MonoBehaviour
         //Instantiate the dead particle system at this location
         Instantiate(deadParticleSystem, gameObject.transform);
 
-        //Call restartlevel in 5 secs
-        Invoke("EndLevel", 5.0f);
+        GameObject.FindGameObjectWithTag("ObjectController").GetComponent<ObjectSpawner>().CancelSpawner();
+
+        //Call restartlevel in 0.4 secs
+        Invoke("EndLevel", 0.4f);
     }
 
     #endregion

@@ -37,7 +37,7 @@ public class DeathMenu : SimpleMenu<DeathMenu>
     {
         Hide();
         Destroy(gameObject); // This menu does not automatically destroy itself
-        GameMenu.Hide();
+        //GameMenu.Hide();
         MainMenu.Show();
     }
 }
