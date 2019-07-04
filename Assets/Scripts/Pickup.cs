@@ -29,6 +29,7 @@ public class Pickup : MonoBehaviour {
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().AddScore(points);
         Instantiate(particleSystem, this.gameObject.transform.position, this.gameObject.transform.rotation);
         gameObject.SetActive(false);
+        transform.GetComponentInParent<AudioSource>().Play();
         Handheld.Vibrate();
     }
 

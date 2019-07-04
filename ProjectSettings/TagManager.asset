@@ -21,6 +21,7 @@ TagManager:
   - HighscoreController
   - HighscoreNumber
   - ZoneController
+  - Points
   layers:
   - Default
   - TransparentFX

@@ -27,10 +27,10 @@ public class DeathMenu : SimpleMenu<DeathMenu>
     public override void OnBackPressed()
     {
         GameController gameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        gameScript.RestartGame();
         Time.timeScale = 1;
         Hide();
         GameMenu.Show();
+        gameScript.RestartGame();
     }
 
     public void OnQuitPressed()

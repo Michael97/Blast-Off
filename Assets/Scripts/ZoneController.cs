@@ -25,6 +25,8 @@ public class ZoneController : MonoBehaviour
 
     public PlayerController PlayerControllerScript;
 
+    public PlanetController PlanetControllerScript;
+
     #endregion
 
 
@@ -62,9 +64,7 @@ public class ZoneController : MonoBehaviour
             ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
         }
 
-        timer = new Timer(3.0f);
-
-        
+        timer = new Timer(0.5f);        
     }
 
 
@@ -80,6 +80,8 @@ public class ZoneController : MonoBehaviour
             if (!ZoneCompleteText.DisplayText)
             {
                 ZoneCompleteText = null; //Set to null, garbage collector kills this
+                PlanetControllerScript.DeletePlanet();
+                PlanetControllerScript.SpawnPlanet();
             }
         }
 
@@ -93,6 +95,8 @@ public class ZoneController : MonoBehaviour
                 ResetParticleSystems();
                 
                 nextZone = false;
+
+                PlanetControllerScript.SpeedOff();
 
                 string tempString = "Completed Level " + (ZoneLevel - 1);
 
@@ -139,6 +143,11 @@ public class ZoneController : MonoBehaviour
 
         //Update the color 
         ColorScript.ChangeColor();
+
+        if (PlanetControllerScript.CurrentPlanet != null)
+            PlanetControllerScript.DeletePlanet();
+
+        PlanetControllerScript.SpawnPlanet();
 
         //Start the particle systems
         for (int i = 0; i < ParticleSystems.Length; i++)

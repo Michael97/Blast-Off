@@ -56,9 +56,11 @@ public class ColorScript : MonoBehaviour
     private void ColorChange()
     {
         if (isPrimaryColor)
-            spriteRenderer.color = ColorControllerScript.PrimaryColor;
+        {
+            SetColor(ColorControllerScript.PrimaryColor);
+        }
         else
-            spriteRenderer.color = ColorControllerScript.SecondaryColor;
+            SetColor(ColorControllerScript.SecondaryColor);
     }
 
     #endregion
@@ -78,6 +80,21 @@ public class ColorScript : MonoBehaviour
 
         particleSystem.Play();
     }
+
+
+    public void SetColor(Color a_newColor)
+    {
+        Color newColor = spriteRenderer.color;
+
+        newColor.b = a_newColor.b;
+        newColor.r = a_newColor.r;
+        newColor.g = a_newColor.g;
+
+        Debug.Log("b : " +newColor.b);
+
+        spriteRenderer.color = newColor;
+    }
+
 
     #endregion
 }

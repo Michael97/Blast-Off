@@ -63,6 +63,7 @@ abstract public class Entity : MonoBehaviour
         entityState = EntityState.State.Dead;
 
         Handheld.Vibrate();
+        Handheld.Vibrate();
 
         //Disable the renderer and collider
         gameObject.GetComponent<Renderer>().enabled = false;
@@ -75,6 +76,8 @@ abstract public class Entity : MonoBehaviour
         Instantiate(deadParticleSystem, gameObject.transform);
 
         GameObject.FindGameObjectWithTag("ObjectController").GetComponent<ObjectSpawner>().CancelSpawner();
+
+        transform.GetComponentInParent<AudioSource>().Play();
 
         //Call restartlevel in 0.4 secs
         Invoke("EndLevel", 0.4f);

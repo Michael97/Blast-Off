@@ -107,6 +107,9 @@ public class GameController : MonoBehaviour {
     //Called to update the UI score
     private void UpdateScore()
     {
+        if (scoreText == null)
+            scoreText = GameObject.FindGameObjectWithTag("Points").GetComponent<Text>();
+
         scoreText.text = "Points " + points;
     }
 
