@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
     public GameMenu GameMenuPrefab;
     public PauseMenu PauseMenuPrefab;
     public OptionsMenu OptionsMenuPrefab;
-    public HighscoresMenu HighscoresMenuPrefab;
+    public ShopMenu ShopMenuPrefab;
 
     private Stack<Menu> menuStack = new Stack<Menu>();
 

@@ -22,9 +22,10 @@ public class MainMenu : SimpleMenu<MainMenu>
         OptionsMenu.Show();
     }
 
-    public void OnHighscoresClick()
+    public void OnShopClick()
     {
-        HighscoresMenu.Show();
+        Hide();
+        ShopMenu.Show();
     }
 
     public override void OnBackPressed()

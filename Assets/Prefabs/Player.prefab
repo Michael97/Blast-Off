@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadParticleSystem: {fileID: 134, guid: 3e2720e12eff95c45ab92b8d5b4cccd4, type: 3}
+  PlayerTouchController: {fileID: 3583397839964926105, guid: 71a0f3f5ec2302c42bb95e1148665dce,
+    type: 3}
   entityState: 0
   MovementSpeed: 5
   HortizontalDirection: 0

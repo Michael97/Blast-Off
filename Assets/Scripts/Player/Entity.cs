@@ -13,7 +13,8 @@ abstract public class Entity : MonoBehaviour
     #region Public Variables
 
     public ParticleSystem deadParticleSystem;
-
+    public GameObject PlayerTouchController;
+    private GameObject playerTouchController;
     public EntityState.State entityState;
 
     #endregion
@@ -24,6 +25,8 @@ abstract public class Entity : MonoBehaviour
     private void Awake()
     {
         entityState = EntityState.State.Alive;
+        playerTouchController = Instantiate(PlayerTouchController, this.transform);
+        playerTouchController.SetActive(true);
     }
 
     //Checks for collisions with pickups
@@ -51,9 +54,6 @@ abstract public class Entity : MonoBehaviour
 
         if (gameMenu != null)
             gameMenu.OnDeath();
-
-        //GameController gameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        //gameScript.RestartGame();
     }
 
     //Called when we dead
@@ -61,6 +61,8 @@ abstract public class Entity : MonoBehaviour
     {
         //Set the entity state to dead
         entityState = EntityState.State.Dead;
+
+        playerTouchController.SetActive(false);
 
         Handheld.Vibrate();
         Handheld.Vibrate();

@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PlanetController.cs" />
+    <Compile Include="Assets\ResetPickups.cs" />
     <Compile Include="Assets\Scripts\AdvertController.cs" />
     <Compile Include="Assets\Scripts\Button Scripts\BaseButtonController.cs" />
     <Compile Include="Assets\Scripts\Button Scripts\LeftButtonController.cs" />
@@ -74,13 +75,13 @@
     <Compile Include="Assets\Scripts\Menu Scripts\AwesomeMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\DeathMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\GameMenu.cs" />
-    <Compile Include="Assets\Scripts\Menu Scripts\HighscoresMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MenuManagerScripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MenuManagerScripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MenuManagerScripts\SimpleMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu Scripts\ShopMenu.cs" />
     <Compile Include="Assets\Scripts\NextZoneParticleEffect.cs" />
     <Compile Include="Assets\Scripts\Object\ObjectMovement.cs" />
     <Compile Include="Assets\Scripts\Object\ObjectPoolScript.cs" />
@@ -92,9 +93,13 @@
     <Compile Include="Assets\Scripts\Player\EntityState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerSpawner.cs" />
+    <Compile Include="Assets\Scripts\Shop\InventorySlot.cs" />
+    <Compile Include="Assets\Scripts\Shop\Item.cs" />
+    <Compile Include="Assets\Scripts\Shop\SaveItemData.cs" />
     <Compile Include="Assets\Scripts\Timers\DestoryTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\DisableTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\Timer.cs" />
+    <Compile Include="Assets\Scripts\Tools\PlayerPrefsX.cs" />
     <Compile Include="Assets\Scripts\Tools\PulseEffect.cs" />
     <Compile Include="Assets\Scripts\Tools\RotateEffect.cs" />
     <Compile Include="Assets\Scripts\Tools\TextManager.cs" />

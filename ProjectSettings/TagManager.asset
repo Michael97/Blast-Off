@@ -22,6 +22,7 @@ TagManager:
   - HighscoreNumber
   - ZoneController
   - Points
+  - PlayerTouchController
   layers:
   - Default
   - TransparentFX

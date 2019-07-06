@@ -4,6 +4,7 @@ public class GameMenu : SimpleMenu<GameMenu>
 {
     public override void OnBackPressed()
     {
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().StopGame();
         Hide();
         MainMenu.Show();
     }

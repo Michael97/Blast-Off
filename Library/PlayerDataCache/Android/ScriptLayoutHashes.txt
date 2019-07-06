@@ -27,6 +27,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 af93f9c42e90877a9ba31e37adfd900c Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.MotionBlur
 fb37e939e8aa4eabb25513f61f2e120f Assembly-CSharp.dll:.ColorController
+b7cc8318fe5815dd36abacc140ea6696 Assembly-CSharp.dll:.PlanetController
 1f46aad187eff42c4e96cbf3bf6ce31f Assembly-CSharp.dll:.LeftButtonController
 0db47584045bd90e80539b1bebec2b16 Assembly-CSharp.dll:.GameMenu
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -96,7 +97,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-271dd15d505bac64d979b222fc332950 Assembly-CSharp.dll:.PlayerSpawner
+819cc2cdebd11ed6a1d4608567f90fe1 Assembly-CSharp.dll:.PlayerSpawner
 63d7b9b64a11859f416d72ba9a3c3fec Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HighscoresController
 d5632f45ee4ea66fd576d9e40e411ebb Assembly-CSharp.dll:.ObjectSpawner
@@ -148,11 +149,12 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 8f3e0270db3ecd31d6ab88efc5fc30ea Assembly-CSharp.dll:.ColorScript
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 54cced885152d06928d346de2f106c9d UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Banner
-68eb2c544bdec8132377611595454ecb Assembly-CSharp.dll:.GameController
+0759ea5d0ab7585a334643b80853190f Assembly-CSharp.dll:.GameController
 d6fc8d3165070298511ec776ea575626 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessResources
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
-0db47584045bd90e80539b1bebec2b16 Assembly-CSharp.dll:.HighscoresMenu
+8d97bf3010581940ce0c6d499f9e6bbc Assembly-CSharp.dll:.ShopMenu
 a53651ee3996fbba20dfe0fce02f0b23 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AutoExposure
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ObjectMoveHorizontal
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Monetization.dll:UnityEngine.Monetization.Placeholder
 50c443b12ccc0b475183318b5088bcc5 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessDebug
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
@@ -199,7 +201,7 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 9d37e36fb98bda0394893ba93ddec71e Assembly-CSharp.dll:.ObjectPoolScript
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.EntityState
 0db47584045bd90e80539b1bebec2b16 Assembly-CSharp.dll:.MainMenu
-ed4afd7a3ba6abcb9ad3d242fca96a74 Assembly-CSharp.dll:.PlayerController
+522bbdb22b733f5bde2d6e29d4d1623f Assembly-CSharp.dll:.PlayerController
 d5630f96bd5a6a6eed7e1754c3fb8703 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessVolume
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 d0987ce3e9092dbe0fa30d73f333fffa Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Grain
@@ -208,6 +210,8 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 ac6acd886c54c48c599ab5fed5781ea7 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AmbientOcclusion
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 32c7382887e6c3c95e295155f68bd7be Assembly-CSharp.dll:.ZoneController
-cdd0300a1720ca826447f7bffbd8e4ab Assembly-CSharp.dll:.MenuManager
-b7cc8318fe5815dd36abacc140ea6696 Assembly-CSharp.dll:.PlanetController
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ObjectMoveHorizontal
+4034833be813a3ed042b75a7a027434a Assembly-CSharp.dll:.MenuManager
+9bab470a7ae11e7ca9144c8b56e36346 Assembly-CSharp.dll:.Item
+e4b804646d86a27bcca56624229eff46 Assembly-CSharp.dll:.InventorySlot
+17e54309cf4e59bdfdbbb8d16c59b752 Assembly-CSharp.dll:.SaveItemData
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ResetPickups

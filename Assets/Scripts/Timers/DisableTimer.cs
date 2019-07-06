@@ -29,9 +29,6 @@ public class DisableTimer : MonoBehaviour
     private void OnEnable()
     {
         timerSeconds = DisableAfterSeconds;
-
-        //Resets the pickup for the prefab
-        gameObject.transform.Find("Pickup").gameObject.SetActive(true);
     }
 
     // Update is called once per frame

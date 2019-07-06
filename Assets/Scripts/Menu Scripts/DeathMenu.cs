@@ -22,6 +22,11 @@ public class DeathMenu : SimpleMenu<DeathMenu>
         HighScore.text = HighscoresScript.IsNewHighscore(GameScript.points).ToString();
         CurrentScore.text = GameScript.points.ToString();
         Grade.text = "E";
+
+        if (PlayerPrefs.HasKey("Money"))
+            PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + GameScript.points);
+        else
+            PlayerPrefs.SetInt("Money", GameScript.points);
     }
 
     public override void OnBackPressed()

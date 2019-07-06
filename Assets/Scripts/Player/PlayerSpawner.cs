@@ -12,6 +12,7 @@ public class PlayerSpawner : MonoBehaviour {
     #region Public Variables
 
     public GameObject PlayerGameObject;
+    public Item ChosenPlayerItem;
 
     #endregion
 
@@ -20,6 +21,8 @@ public class PlayerSpawner : MonoBehaviour {
 
     public void SpawnPlayer()
     {
+        PlayerGameObject.GetComponent<SpriteRenderer>().sprite = ChosenPlayerItem.icon;
+
         Instantiate(PlayerGameObject, gameObject.transform);
     }
 

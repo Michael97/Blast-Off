@@ -90,8 +90,6 @@ public class ColorScript : MonoBehaviour
         newColor.r = a_newColor.r;
         newColor.g = a_newColor.g;
 
-        Debug.Log("b : " +newColor.b);
-
         spriteRenderer.color = newColor;
     }
 
