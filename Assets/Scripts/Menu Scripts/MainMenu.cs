@@ -5,7 +5,7 @@ public class MainMenu : SimpleMenu<MainMenu>
 {
     private void Start()
     {
-        GameObject.FindGameObjectWithTag("HighscoreNumber").GetComponent<Text>().text = PlayerPrefs.GetInt("HighScore").ToString();
+        //GameObject.FindGameObjectWithTag("HighscoreNumber").GetComponent<Text>().text = PlayerPrefs.GetInt("HighScore").ToString();
     }
 
     public void OnPlayPressed()

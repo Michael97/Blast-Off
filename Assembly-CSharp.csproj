@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\Timers\DestoryTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\DisableTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\Timer.cs" />
+    <Compile Include="Assets\Scripts\Tools\PingPongX.cs" />
     <Compile Include="Assets\Scripts\Tools\PlayerPrefsX.cs" />
     <Compile Include="Assets\Scripts\Tools\PulseEffect.cs" />
     <Compile Include="Assets\Scripts\Tools\RotateEffect.cs" />

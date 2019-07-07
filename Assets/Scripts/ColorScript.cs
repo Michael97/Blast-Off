@@ -40,7 +40,7 @@ public class ColorScript : MonoBehaviour
 
         if (particleSystem)
         {
-            ColorChangeParticle();
+            return;
         }
         else
         {

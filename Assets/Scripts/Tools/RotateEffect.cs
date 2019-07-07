@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class RotateEffect : MonoBehaviour
 {
-    public float RotateMax;
+    public float RotateAmount;
     public float Speed;
 
-    private void FixedUpdate()
+    public float StartRotation;
+
+    private void Start()
     {
-        Vector3 tempEuler = new Vector3();
+        StartRotation = transform.localEulerAngles.z;
+        StartCoroutine(ObjectRotate());
+    }
 
-        tempEuler.z = Mathf.PingPong(Time.time * Speed, RotateMax) - (RotateMax/2);
+    IEnumerator ObjectRotate()
+    {
+        float timer = 0;
+        while (true)
+        {
+            float angle = Mathf.Sin(timer) * RotateAmount + StartRotation;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        transform.eulerAngles = tempEuler;
+            timer += Time.deltaTime * Speed;
+            yield return null;
+        }
     }
 }

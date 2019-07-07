@@ -310,7 +310,7 @@ Canvas:
   m_GameObject: {fileID: 5112023651819824145}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -454,8 +454,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleMax: 0.18
+  scaleMin: 0
   tempScale: {x: 0, y: 0, z: 0}
   speed: 0.09
+  isIncreasing: 0
 --- !u!1 &5112023652723965383
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,8 +629,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef59c94c3e004549951b560923b213a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotateMax: 11.64
+  RotateAmount: 0
   Speed: 3.28
+  StartRotation: 0
 --- !u!1 &6486563837109703417
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,8 +725,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleMax: 0.27
+  scaleMin: 0
   tempScale: {x: 0, y: 0, z: 0}
   speed: 0.09
+  isIncreasing: 0
 --- !u!1 &7400842694696493256
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,8 +1000,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleMax: 0.09
+  scaleMin: 0
   tempScale: {x: 0, y: 0, z: 0}
   speed: 0.09
+  isIncreasing: 0
 --- !u!114 &7954601835967979388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,8 +1016,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef59c94c3e004549951b560923b213a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotateMax: 15.54
+  RotateAmount: 0
   Speed: 10.62
+  StartRotation: 0
 --- !u!1 &7734472004303787378
 GameObject:
   m_ObjectHideFlags: 0

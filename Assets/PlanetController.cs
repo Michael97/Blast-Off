@@ -14,6 +14,7 @@ public class PlanetController : MonoBehaviour
 
     public void DeletePlanet()
     {
+        Debug.Log("delete");
         Destroy(CurrentPlanet);
     }
 

@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour {
 
     public int DeathCount;
     public AdvertController AdvertScript;
+    public PlanetController PlanetScript;
+
 
     public bool ShouldShowTutorial;
     public GameObject TutorialGameObject;
@@ -37,6 +39,8 @@ public class GameController : MonoBehaviour {
     public void StopGame()
     {
         DeletePlayer();
+
+        PlanetScript.DeletePlanet();
 
         GameObject objectController = GameObject.FindGameObjectWithTag("ObjectController");
 
@@ -60,6 +64,7 @@ public class GameController : MonoBehaviour {
         }
 
         DeletePlayer();
+        PlanetScript.DeletePlanet();
 
         GameObject objectController = GameObject.FindGameObjectWithTag("ObjectController");
 

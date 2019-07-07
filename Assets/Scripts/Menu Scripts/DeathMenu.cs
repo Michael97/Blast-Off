@@ -40,9 +40,11 @@ public class DeathMenu : SimpleMenu<DeathMenu>
 
     public void OnQuitPressed()
     {
+        GameController gameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         Hide();
         Destroy(gameObject); // This menu does not automatically destroy itself
         //GameMenu.Hide();
         MainMenu.Show();
+        gameScript.StopGame();
     }
 }

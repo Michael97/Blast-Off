@@ -14,6 +14,11 @@ public abstract class Menu<T> : Menu where T : Menu<T>
         Instance = null;
     }
 
+    public void OnEnable()
+    {
+        GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+    }
+
     protected static void Open()
     {
         if (Instance == null)
@@ -39,6 +44,7 @@ public abstract class Menu<T> : Menu where T : Menu<T>
     {
         Close();
     }
+
 }
 
 public abstract class Menu : MonoBehaviour

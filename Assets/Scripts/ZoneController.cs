@@ -51,7 +51,6 @@ public class ZoneController : MonoBehaviour
     {
         for (int i = 0; i < ParticleSystems.Length; i++)
         {
-            //ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
             ParticleSystems[i].GetComponent<NextZoneParticleEffect>().NextZoneStart();
         }
     }
@@ -59,11 +58,11 @@ public class ZoneController : MonoBehaviour
     private void Awake()
     {
         //Start the particle systems
-        for (int i = 0; i < ParticleSystems.Length; i++)
+       /* for (int i = 0; i < ParticleSystems.Length; i++)
         {
             ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
         }
-
+        */
         timer = new Timer(0.5f);        
     }
 
