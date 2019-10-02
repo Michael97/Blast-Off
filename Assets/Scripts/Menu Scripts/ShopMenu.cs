@@ -7,10 +7,10 @@ public class ShopMenu : SimpleMenu<ShopMenu>
 {
     public Text MoneyText;
 
-    private void OnEnable()
+    new void OnEnable()
     {
         if (PlayerPrefs.HasKey("Money"))
-            MoneyText.text = PlayerPrefs.GetInt("Money").ToString();
+            MoneyText.text = "Money - " + PlayerPrefs.GetInt("Money").ToString();
     }
 
     public override void OnBackPressed()

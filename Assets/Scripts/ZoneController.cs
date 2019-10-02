@@ -7,6 +7,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class ZoneController : MonoBehaviour
 {
@@ -117,6 +118,8 @@ public class ZoneController : MonoBehaviour
     //Called when obstaclesLeft == 0
     public void NextZone()
     {
+        AnalyticsEvent.LevelComplete(ZoneLevel);
+
         //Increase the zone level by one
         ZoneLevel++;
 

@@ -7,6 +7,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class GameController : MonoBehaviour {
 
@@ -38,6 +39,8 @@ public class GameController : MonoBehaviour {
 
     public void StopGame()
     {
+        AnalyticsEvent.LevelQuit(ZoneScript.ZoneLevel);
+
         DeletePlayer();
 
         PlanetScript.DeletePlanet();
@@ -49,8 +52,9 @@ public class GameController : MonoBehaviour {
 
     public void RestartGame()
     {
+        AnalyticsEvent.GameStart();
         DeathCount++;
-
+        
         if (DeathCount >= 3)
         {
             AdvertScript.ShowAd();
@@ -131,14 +135,8 @@ public class GameController : MonoBehaviour {
     {
         ShouldShowTutorial = true;
         points = 0;
-        Application.targetFrameRate = 60;
     }
 
-    // Update is called once per frame
-    private void FixedUpdate()
-    {
-        Application.targetFrameRate = 60;
-    }
 
     //Called to update the UI score
     private void UpdateScore()

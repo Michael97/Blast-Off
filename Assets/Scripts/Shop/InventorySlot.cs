@@ -9,9 +9,10 @@ public class InventorySlot : MonoBehaviour
     public Text priceText;
     public Item item;
 
-    private void Awake()
+    private void OnEnable()
     {
         image.sprite = item.icon;
+        image.color = item.color;
 
         if (item.isOwned)
         {

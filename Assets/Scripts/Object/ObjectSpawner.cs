@@ -101,19 +101,19 @@ public class ObjectSpawner : MonoBehaviour {
             if (num <= 1 && num >= -1)
             {
                 ChosenObstacle = OneSigma[Random.Range(0, OneSigma.Length)];
-                Debug.Log("easy");
+                //Debug.Log("easy");
                 chosen = true;
             }
             else if (num <= 2 && num >= -2)
             {
                 ChosenObstacle = TwoSigma[Random.Range(0, TwoSigma.Length)];
-                Debug.Log("medium");
+                //Debug.Log("medium");
                 chosen = true;
             }
             else if (num <= 3 && num >= -3)
             {
                 ChosenObstacle = ThreeSigma[Random.Range(0, ThreeSigma.Length)];
-                Debug.Log("hard");
+                //Debug.Log("hard");
                 chosen = true;
             }
             else

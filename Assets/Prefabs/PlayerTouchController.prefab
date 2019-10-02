@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3583397839964926109}
   - component: {fileID: 3583397839964926108}
   - component: {fileID: 3583397839964926111}
+  - component: {fileID: 7864239943481096957}
   m_Layer: 0
   m_Name: PlayerTouchController
   m_TagString: PlayerTouchController
@@ -58,7 +59,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1404796797
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &3583397839964926108
@@ -100,6 +101,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7864239943481096957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3583397839964926105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a32e4c61331124ca8b9f9d13dc234b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3583397840267848780
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: 0}
+  m_AnchoredPosition: {x: 200, y: -222.99995}
   m_SizeDelta: {x: 400, y: 1440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3583397840267848768
@@ -319,7 +332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 0}
+  m_AnchoredPosition: {x: -200, y: -223}
   m_SizeDelta: {x: 400, y: 1440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3583397840960873758
@@ -473,16 +486,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3583397839964926110}
     m_Modifications:
-    - target: {fileID: 2811356720800591369, guid: 802a2a7d97574ed4096c3923fa5dae4d,
-        type: 3}
-      propertyPath: m_Name
-      value: RightButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 2811356720800591369, guid: 802a2a7d97574ed4096c3923fa5dae4d,
-        type: 3}
-      propertyPath: m_TagString
-      value: MovementController
-      objectReference: {fileID: 0}
     - target: {fileID: 2811356720800591368, guid: 802a2a7d97574ed4096c3923fa5dae4d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -546,7 +549,7 @@ PrefabInstance:
     - target: {fileID: 2811356720800591368, guid: 802a2a7d97574ed4096c3923fa5dae4d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -223
       objectReference: {fileID: 0}
     - target: {fileID: 2811356720800591368, guid: 802a2a7d97574ed4096c3923fa5dae4d,
         type: 3}
@@ -587,6 +590,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811356720800591369, guid: 802a2a7d97574ed4096c3923fa5dae4d,
+        type: 3}
+      propertyPath: m_Name
+      value: RightButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811356720800591369, guid: 802a2a7d97574ed4096c3923fa5dae4d,
+        type: 3}
+      propertyPath: m_TagString
+      value: MovementController
       objectReference: {fileID: 0}
     - target: {fileID: 2811356720800591370, guid: 802a2a7d97574ed4096c3923fa5dae4d,
         type: 3}

@@ -9,4 +9,5 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public bool isOwned = false;
     public int price = 0;
+    public Color color = Color.clear;
 }

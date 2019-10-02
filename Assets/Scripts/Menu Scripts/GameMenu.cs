@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Analytics;
 
 public class GameMenu : SimpleMenu<GameMenu>
 {
@@ -18,7 +19,7 @@ public class GameMenu : SimpleMenu<GameMenu>
 
     public void OnDeath()
     {
-        //Time.timeScale = 0;
+        
         Hide();
         DeathMenu.Show();
     }

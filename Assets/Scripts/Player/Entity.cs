@@ -7,6 +7,7 @@
 //\===========================================================================================================================================
 
 using UnityEngine;
+using UnityEngine.Analytics;
 
 abstract public class Entity : MonoBehaviour
 {
@@ -83,6 +84,8 @@ abstract public class Entity : MonoBehaviour
 
         //Call restartlevel in 0.4 secs
         Invoke("EndLevel", 0.4f);
+
+        AnalyticsEvent.GameOver();
     }
 
     #endregion

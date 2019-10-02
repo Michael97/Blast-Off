@@ -36,7 +36,7 @@ public class MenuManager : MonoBehaviour
 
     public void OpenMenu(Menu instance)
     {
-        Debug.Log(instance.name);
+        //Debug.Log(instance.name);
         // De-activate top menu
         if (menuStack.Count > 0)
         {

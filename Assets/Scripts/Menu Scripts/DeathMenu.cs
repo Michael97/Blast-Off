@@ -10,7 +10,7 @@ public class DeathMenu : SimpleMenu<DeathMenu>
     public HighscoresController HighscoresScript;
     public GameController GameScript;
 
-    void OnEnable()
+    new void OnEnable()
     {
         HighscoresScript = GameObject.FindGameObjectWithTag("HighscoreController").GetComponent<HighscoresController>();
         GameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
@@ -29,6 +29,7 @@ public class DeathMenu : SimpleMenu<DeathMenu>
             PlayerPrefs.SetInt("Money", GameScript.points);
     }
 
+    //This is the restart button.
     public override void OnBackPressed()
     {
         GameController gameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
