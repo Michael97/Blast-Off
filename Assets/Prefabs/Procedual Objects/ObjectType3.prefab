@@ -517,6 +517,7 @@ GameObject:
   - component: {fileID: 6705728596768982499}
   - component: {fileID: 8705639866128016640}
   - component: {fileID: 6746729715976011655}
+  - component: {fileID: 4411664390769426823}
   m_Layer: 0
   m_Name: ObjectType3
   m_TagString: Object1
@@ -678,6 +679,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799c23ebb34258643b57926e84e2bcdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4411664390769426823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8115236930783136319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdd7c5578d38084dab51b10266629e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  PlayerPrefsString: SoundEffectsToggle
 --- !u!1 &8184861961525561494
 GameObject:
   m_ObjectHideFlags: 0

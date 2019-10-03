@@ -99,6 +99,8 @@
     <Compile Include="Assets\Scripts\Timers\DestoryTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\DisableTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\Timer.cs" />
+    <Compile Include="Assets\Scripts\Tools\AudioToggle.cs" />
+    <Compile Include="Assets\Scripts\Tools\CustomMesh.cs" />
     <Compile Include="Assets\Scripts\Tools\DeleteAllPlayerPrefs.cs" />
     <Compile Include="Assets\Scripts\Tools\PingPongX.cs" />
     <Compile Include="Assets\Scripts\Tools\PlayerPrefsX.cs" />
@@ -109,6 +111,7 @@
     <Compile Include="Assets\Scripts\ZoneController.cs" />
     <Compile Include="Assets\TouchController.cs" />
     <None Include="Assets\Services\Analytics\StandardEvents\README.txt" />
+    <None Include="Assets\Audio\Source.txt" />
     <Reference Include="UnityEngine.Monetization">
       <HintPath>D:/Michael Thomas Portfolio/Blast Off/Blast Off/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
     </Reference>
