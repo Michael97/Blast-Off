@@ -32,6 +32,8 @@ public class GameController : MonoBehaviour {
     public bool ShouldShowTutorial;
     public GameObject TutorialGameObject;
 
+    public ParticleSystem ParticleSystemCube;
+
     #endregion
 
 
@@ -40,7 +42,7 @@ public class GameController : MonoBehaviour {
     public void StopGame()
     {
         AnalyticsEvent.LevelQuit(ZoneScript.ZoneLevel);
-
+        
         DeletePlayer();
 
         PlanetScript.DeletePlanet();
@@ -48,13 +50,26 @@ public class GameController : MonoBehaviour {
         GameObject objectController = GameObject.FindGameObjectWithTag("ObjectController");
 
         DeleteObjectStuff(objectController);
+
+        foreach (ParticleSystem ps in ZoneScript.ParticleSystems)
+        {
+            ps.Stop();
+        }
+
+        ZoneScript.CancelZone();
     }
 
     public void RestartGame()
     {
         AnalyticsEvent.GameStart();
+
         DeathCount++;
-        
+
+        foreach (ParticleSystem ps in ZoneScript.ParticleSystems)
+        {
+            ps.Play();
+        }
+
         if (DeathCount >= 3)
         {
             AdvertScript.ShowAd();

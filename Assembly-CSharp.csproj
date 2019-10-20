@@ -61,14 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AdvertController.cs" />
-    <Compile Include="Assets\Scripts\Button Scripts\BaseButtonController.cs" />
-    <Compile Include="Assets\Scripts\Button Scripts\LeftButtonController.cs" />
-    <Compile Include="Assets\Scripts\Button Scripts\RightButtonController.cs" />
-    <Compile Include="Assets\Scripts\Button Scripts\UpButtonController.cs" />
+    <Compile Include="Assets\Scripts\BaseObject.cs" />
     <Compile Include="Assets\Scripts\ColorController.cs" />
     <Compile Include="Assets\Scripts\ColorScript.cs" />
     <Compile Include="Assets\Scripts\FPSTarget.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\GameState.cs" />
     <Compile Include="Assets\Scripts\HighscoresController.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\AwesomeMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\DeathMenu.cs" />
@@ -80,12 +78,17 @@
     <Compile Include="Assets\Scripts\Menu Scripts\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\ShopMenu.cs" />
+    <Compile Include="Assets\Scripts\MobileControls\BaseMobileController.cs" />
+    <Compile Include="Assets\Scripts\MobileControls\Button Scripts\BaseButtonController.cs" />
+    <Compile Include="Assets\Scripts\MobileControls\PlayerDragController.cs" />
+    <Compile Include="Assets\Scripts\MobileControls\TouchController.cs" />
     <Compile Include="Assets\Scripts\NextZoneParticleEffect.cs" />
     <Compile Include="Assets\Scripts\Object\ObjectMovement.cs" />
     <Compile Include="Assets\Scripts\Object\ObjectPoolScript.cs" />
     <Compile Include="Assets\Scripts\Object\ObjectRotation.cs" />
     <Compile Include="Assets\Scripts\Object\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\ObjectMoveHorizontal.cs" />
+    <Compile Include="Assets\Scripts\ParticleController.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\PlanetController.cs" />
     <Compile Include="Assets\Scripts\Player\Entity.cs" />
@@ -100,6 +103,8 @@
     <Compile Include="Assets\Scripts\Timers\DisableTimer.cs" />
     <Compile Include="Assets\Scripts\Timers\Timer.cs" />
     <Compile Include="Assets\Scripts\Tools\AudioToggle.cs" />
+    <Compile Include="Assets\Scripts\Tools\CameraShake.cs" />
+    <Compile Include="Assets\Scripts\Tools\CreatePrefabVariant.cs" />
     <Compile Include="Assets\Scripts\Tools\CustomMesh.cs" />
     <Compile Include="Assets\Scripts\Tools\DeleteAllPlayerPrefs.cs" />
     <Compile Include="Assets\Scripts\Tools\PingPongX.cs" />
@@ -109,7 +114,6 @@
     <Compile Include="Assets\Scripts\Tools\ScrollTexture.cs" />
     <Compile Include="Assets\Scripts\Tools\TextManager.cs" />
     <Compile Include="Assets\Scripts\ZoneController.cs" />
-    <Compile Include="Assets\TouchController.cs" />
     <None Include="Assets\Services\Analytics\StandardEvents\README.txt" />
     <None Include="Assets\Audio\Source.txt" />
     <Reference Include="UnityEngine.Monetization">

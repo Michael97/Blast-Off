@@ -30,7 +30,10 @@ public class TextManager
     {
         //if displaytext == false
         if (!DisplayText)
+        {
+            hide();
             return; //early out
+        }
 
         StartDelayTimer.Update();
 
@@ -48,12 +51,17 @@ public class TextManager
 
             if (EndDelayTimer.GetHasFinished())
             {
-                TextObject.text = "";
-                TextObject.enabled = false;
-                DisplayText = false;
-                EndDelayTimer = null;
-                StartDelayTimer = null;
+                hide();
             }
         }
+    }
+
+    private void hide()
+    {
+        TextObject.text = "";
+        TextObject.enabled = false;
+        DisplayText = false;
+        EndDelayTimer = null;
+        StartDelayTimer = null;
     }
 }

@@ -25,12 +25,18 @@ public class PlayerController : Entity
     private void FixedUpdate()
     { 
         MoveDirection();
+        SetPlayerSprite();
     }
 
     //Updates the position of the object
     private void MoveDirection()
     {
         gameObject.transform.position += new Vector3(HortizontalDirection * MovementSpeed * Time.deltaTime, 0.0f, 0.0f);
+    }
+
+    private void SetPlayerSprite()
+    {
+
     }
 
     #endregion

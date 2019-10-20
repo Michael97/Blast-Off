@@ -82,7 +82,7 @@ public class ObjectSpawner : MonoBehaviour {
             ObjectPoolScript_.SetObject(ChosenObstacle, gameObject.transform.position);
             obstaclesLeft--;
         }
-        else if (obstaclesLeft <= 0)
+        else if (obstaclesLeft <= 0 && ZoneScript.m_still_playing)
         {
             ZoneScript.NextZone();
             shouldSpawnObject = false;

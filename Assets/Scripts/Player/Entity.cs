@@ -26,8 +26,14 @@ abstract public class Entity : MonoBehaviour
     private void Awake()
     {
         entityState = EntityState.State.Alive;
-        playerTouchController = Instantiate(PlayerTouchController, this.transform);
-        playerTouchController.SetActive(true);
+
+        if (PlayerPrefs.GetString("ChosenControlScheme") == "Tap")
+        {
+            playerTouchController = Instantiate(PlayerTouchController, this.transform);
+            playerTouchController.SetActive(true);
+        }
+        else
+            gameObject.AddComponent<PlayerDragController>();
     }
 
     //Checks for collisions with pickups
@@ -41,10 +47,14 @@ abstract public class Entity : MonoBehaviour
             {
                 //Call "PickedUp()" function in the collision gameobjects script
                 collision.gameObject.GetComponent<Pickup>().PickedUp();
+                Camera.main.GetComponent<CameraShake>().shakeDuration = 0.01f;
             }
             //else the gameobject we collided with is something that should  kill us
             else
+            {
                 Dead();
+                Camera.main.GetComponent<CameraShake>().shakeDuration = 0.05f;
+            }
         }
     }
 
@@ -55,6 +65,7 @@ abstract public class Entity : MonoBehaviour
 
         if (gameMenu != null)
             gameMenu.OnDeath();
+
     }
 
     //Called when we dead
@@ -63,7 +74,10 @@ abstract public class Entity : MonoBehaviour
         //Set the entity state to dead
         entityState = EntityState.State.Dead;
 
-        playerTouchController.SetActive(false);
+        if (PlayerPrefs.GetString("ChosenControlScheme") == "Tap")
+            playerTouchController.SetActive(false);
+        else
+            Destroy(GetComponent<PlayerDragController>());
 
         Handheld.Vibrate();
         Handheld.Vibrate();
@@ -80,7 +94,8 @@ abstract public class Entity : MonoBehaviour
 
         GameObject.FindGameObjectWithTag("ObjectController").GetComponent<ObjectSpawner>().CancelSpawner();
 
-        transform.GetComponentInParent<AudioSource>().Play();
+        if (transform.GetComponentInParent<AudioSource>().enabled == true)
+            transform.GetComponentInParent<AudioSource>().Play();
 
         //Call restartlevel in 0.4 secs
         Invoke("EndLevel", 0.4f);

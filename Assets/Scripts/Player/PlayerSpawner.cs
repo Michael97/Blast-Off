@@ -22,6 +22,7 @@ public class PlayerSpawner : MonoBehaviour {
     public void SpawnPlayer()
     {
         PlayerGameObject.GetComponent<SpriteRenderer>().sprite = ChosenPlayerItem.icon;
+        PlayerGameObject.GetComponent<SpriteRenderer>().color = ChosenPlayerItem.color;
 
         Instantiate(PlayerGameObject, gameObject.transform);
     }

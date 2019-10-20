@@ -8,6 +8,7 @@ public class MainMenu : SimpleMenu<MainMenu>
         //GameObject.FindGameObjectWithTag("HighscoreNumber").GetComponent<Text>().text = PlayerPrefs.GetInt("HighScore").ToString();
     }
 
+
     public void OnPlayPressed()
     {
         GameController gameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();

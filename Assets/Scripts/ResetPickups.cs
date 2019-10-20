@@ -8,6 +8,8 @@ public class ResetPickups : MonoBehaviour
     void OnEnable()
     {
         //Resets the pickup for the prefab
-        gameObject.transform.Find("Pickup").gameObject.SetActive(true);
+        //Null check
+        if (gameObject.transform.Find("Pickup") != null)
+            gameObject.transform.Find("Pickup").gameObject.SetActive(true);
     }
 }

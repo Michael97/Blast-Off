@@ -51,9 +51,12 @@ public class NextZoneParticleEffect : MonoBehaviour
             shouldDecrease = true;
 
             ObjectSpawnerScript.shouldSpawnObject = true;
+            //Debug.Log("we getting somewhere");
 
             //Change the color of the particles after we finished boosting.
             GetComponent<ColorScript>().ColorChangeParticle();
+
+
         }
 
         var main = GetComponent<ParticleSystem>().main;

@@ -78,7 +78,7 @@ public class ColorScript : MonoBehaviour
         else
             main.startColor = ColorControllerScript.SecondaryColor;
 
-        particleSystem.Play();
+        //particleSystem.Play();
     }
 
 

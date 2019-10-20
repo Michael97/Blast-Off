@@ -28,6 +28,8 @@ public class ZoneController : MonoBehaviour
 
     public PlanetController PlanetControllerScript;
 
+    public bool m_still_playing;
+
     #endregion
 
 
@@ -38,7 +40,7 @@ public class ZoneController : MonoBehaviour
 
     //private float timer;
 
-    private Timer timer;
+    public Timer timer;
 
     public bool nextZone;
 
@@ -58,15 +60,8 @@ public class ZoneController : MonoBehaviour
 
     private void Awake()
     {
-        //Start the particle systems
-       /* for (int i = 0; i < ParticleSystems.Length; i++)
-        {
-            ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
-        }
-        */
         timer = new Timer(0.5f);        
     }
-
 
     private void FixedUpdate()
     {
@@ -77,7 +72,7 @@ public class ZoneController : MonoBehaviour
             ZoneCompleteText.Update();
 
             //Check to see if we still need the object
-            if (!ZoneCompleteText.DisplayText)
+            if (!ZoneCompleteText.DisplayText && m_still_playing)
             {
                 ZoneCompleteText = null; //Set to null, garbage collector kills this
                 PlanetControllerScript.DeletePlanet();
@@ -118,6 +113,9 @@ public class ZoneController : MonoBehaviour
     //Called when obstaclesLeft == 0
     public void NextZone()
     {
+        if (!m_still_playing)
+            return;
+
         AnalyticsEvent.LevelComplete(ZoneLevel);
 
         //Increase the zone level by one
@@ -132,6 +130,7 @@ public class ZoneController : MonoBehaviour
         nextZone = true;
 
         timer.ResetTimer();
+        timer.SetEnabled(true);
     }
 
     public void ResetZone()
@@ -155,11 +154,31 @@ public class ZoneController : MonoBehaviour
         for (int i = 0; i < ParticleSystems.Length; i++)
         {
             ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
+            ParticleSystems[i].Play();
         }
 
         nextZone = false;
-
+       // Debug.Log("Reset Zone called");
         timer.ResetTimer();
+        timer.SetEnabled(true);
+        m_still_playing = true;
+    }
+
+    public void CancelZone()
+    {
+     //   Debug.Log("Cancel Zone called");
+        timer.SetEnabled(false);
+        m_still_playing = false;
+
+        foreach (ParticleSystem ps in ParticleSystems)
+        {
+            ps.Stop();
+        }
+        PlanetControllerScript.DeletePlanet();
+
+        //Null check 
+        if (ZoneCompleteText != null)
+            ZoneCompleteText.DisplayText = false;
     }
 
     #endregion

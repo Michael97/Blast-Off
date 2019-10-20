@@ -7,17 +7,27 @@ public class Timer
 
     private bool hasFinished;
 
+    private bool isEnabled;
+
     public Timer(float a_timerCount)
     {
         defaultTimerCount = a_timerCount;
         currentTimerCount = defaultTimerCount;
         hasFinished = false;
+        isEnabled = true;
     }
 
     public void Update()
     {
+        if (isEnabled == false)
+        {
+            //Debug.Log("not counting");
+            return;
+        }
+
         if (hasFinished == false)
         {
+            //Debug.Log("counting " + isEnabled);
             currentTimerCount -= Time.deltaTime;
 
             if (currentTimerCount <= 0.0f)
@@ -26,10 +36,23 @@ public class Timer
 
     }
 
+    public bool GetEnabled()
+    {
+        return isEnabled;
+    }
+
+    public void SetEnabled(bool boolean)
+    {
+       // Debug.Log("first " + isEnabled);
+        isEnabled = boolean;
+      //  Debug.Log("second " + isEnabled);
+    }
+
     public void ResetTimer()
     {
         currentTimerCount = defaultTimerCount;
         hasFinished = false;
+        isEnabled = false;
     }
 
     //Getters and setters
