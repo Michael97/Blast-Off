@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ccccbc1a39e4b1488ab9bd3c9318aa0, type: 3}
+  m_Name: AltSkin08
+  m_EditorClassIdentifier: 
+  name: AltSkin08
+  icon: {fileID: 21300004, guid: d62070cfed34e044185a75da5b0cc0c9, type: 3}
+  isOwned: 0
+  price: 20000
+  color: {r: 0.9019475, g: 1, b: 0, a: 0}

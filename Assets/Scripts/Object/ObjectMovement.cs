@@ -18,7 +18,7 @@ public class ObjectMovement : MonoBehaviour {
     void FixedUpdate () {
 
         //Move downwards
-        transform.Translate(Direction * Speed * Time.deltaTime);
+        transform.Translate(Direction * Speed * Time.deltaTime,Space.World);
     }
 
     #endregion

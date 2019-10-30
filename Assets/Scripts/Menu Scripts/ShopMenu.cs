@@ -9,8 +9,13 @@ public class ShopMenu : SimpleMenu<ShopMenu>
 
     new void OnEnable()
     {
+        UpdateText();
+    }
+
+    public void UpdateText()
+    {
         if (PlayerPrefs.HasKey("Money"))
-            MoneyText.text = "Money - " + PlayerPrefs.GetInt("Money").ToString();
+            MoneyText.text = PlayerPrefs.GetInt("Money").ToString();
     }
 
     public override void OnBackPressed()

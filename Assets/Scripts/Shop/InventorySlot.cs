@@ -31,6 +31,7 @@ public class InventorySlot : MonoBehaviour
         //If we dont own the item
         if (item.isOwned == false)
         {
+            Debug.Log("we dont own it");
             //if we have the money
             if (PlayerPrefs.GetInt("Money") >= item.price)
             {
@@ -38,7 +39,10 @@ public class InventorySlot : MonoBehaviour
                 PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") - item.price);
                 PlayerPrefsX.SetBool(item.name, true);
                 item.isOwned = true;
+                priceText.text = "Owned";
                 SetAlpha(1.0f);
+                GameObject.FindGameObjectWithTag("GameMenu").GetComponent<ShopMenu>().UpdateText();
+                Debug.Log("We own it!");
             }
         }
 

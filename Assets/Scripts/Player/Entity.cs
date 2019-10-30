@@ -47,7 +47,7 @@ abstract public class Entity : MonoBehaviour
             {
                 //Call "PickedUp()" function in the collision gameobjects script
                 collision.gameObject.GetComponent<Pickup>().PickedUp();
-                Camera.main.GetComponent<CameraShake>().shakeDuration = 0.01f;
+                //Camera.main.GetComponent<CameraShake>().shakeDuration = 0.01f;
             }
             //else the gameobject we collided with is something that should  kill us
             else

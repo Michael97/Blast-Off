@@ -159,7 +159,7 @@ public class GameController : MonoBehaviour {
         if (scoreText == null)
             scoreText = GameObject.FindGameObjectWithTag("Points").GetComponent<Text>();
 
-        scoreText.text = "Points " + points;
+        scoreText.text = points.ToString();
     }
 
     #endregion

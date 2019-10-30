@@ -13,6 +13,8 @@ public class ColorController : MonoBehaviour
 
     public Color PrimaryColor;
     public Color SecondaryColor;
+    public Color ThirdColor;
+    public Color FourthColor;
 
     #endregion
 
@@ -23,6 +25,8 @@ public class ColorController : MonoBehaviour
     {
         PrimaryColor = Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f);
         SecondaryColor = Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f);
+        ThirdColor = Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f);
+        FourthColor = Random.ColorHSV(0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f);
     }
 
     #endregion

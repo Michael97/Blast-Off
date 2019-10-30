@@ -22,7 +22,11 @@ public class PlayerSpawner : MonoBehaviour {
     public void SpawnPlayer()
     {
         PlayerGameObject.GetComponent<SpriteRenderer>().sprite = ChosenPlayerItem.icon;
-        PlayerGameObject.GetComponent<SpriteRenderer>().color = ChosenPlayerItem.color;
+        Material mat = PlayerGameObject.GetComponent<SpriteRenderer>().sharedMaterial;
+
+       // mat.SetColor("_TintColorRed", ChosenPlayerItem.color);
+        //mat.SetColor("_TintColorGreen", ChosenPlayerItem.color);
+        mat.SetColor("_TintColorBlue", ChosenPlayerItem.color);
 
         Instantiate(PlayerGameObject, gameObject.transform);
     }

@@ -140,7 +140,7 @@ RectTransform:
   m_GameObject: {fileID: 212996488}
   m_LocalRotation: {x: -0, y: -0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: -2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 402767641}
   m_RootOrder: 2
@@ -187,7 +187,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 16ab08c6f08ebc842ba4bef2516ac925, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb2e6f40418147c4585951981a155c8b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -862,7 +862,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 16ab08c6f08ebc842ba4bef2516ac925, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb2e6f40418147c4585951981a155c8b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1130,7 +1130,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentPlanet: {fileID: 0}
-  PlanetPrefab: {fileID: 8280394199162579605, guid: 18a3d7eac54baac41963f7bf8edf3aa9,
+  PlanetSprites:
+  - {fileID: 21300000, guid: 63be3bbd6e6fbb84da6f78374f855f8c, type: 3}
+  - {fileID: 21300000, guid: 14e0af88f619b704eaa80c9fa802be29, type: 3}
+  - {fileID: 21300000, guid: 24eba75cc60924442980069df202a00a, type: 3}
+  - {fileID: 21300000, guid: 0e57a53e00970924bb06c71cef3cf361, type: 3}
+  - {fileID: 21300000, guid: 149b11de80c6d63458a1ac3363005225, type: 3}
+  - {fileID: 21300000, guid: 2aa8f9f88585964449208a8a80739142, type: 3}
+  - {fileID: 21300000, guid: eee1a592917b91e42ab97668560d8066, type: 3}
+  - {fileID: 21300000, guid: ef8c26804176b9f4592c3155a9c924bf, type: 3}
+  - {fileID: 21300000, guid: c3cda7f42e609044d85e7f8c9b68f916, type: 3}
+  - {fileID: 21300000, guid: f5fb3c3e841596647aebda56df4b78ce, type: 3}
+  PlanetGameObject: {fileID: 8322299314512635383, guid: bf41d59f41afce8418fd09096a96201a,
     type: 3}
 --- !u!4 &999520135
 Transform:
@@ -1242,7 +1253,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 1404796797
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1981,6 +1992,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrimaryColor: {r: 0, g: 0, b: 0, a: 0}
   SecondaryColor: {r: 0, g: 0, b: 0, a: 0}
+  ThirdColor: {r: 0, g: 0, b: 0, a: 0}
+  FourthColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1969347540
 Transform:
   m_ObjectHideFlags: 0
