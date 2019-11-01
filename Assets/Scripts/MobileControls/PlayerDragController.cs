@@ -6,6 +6,16 @@ public class PlayerDragController : BaseMobileController
 {
     private bool m_can_move;
 
+    private Vector3 touchPosition;
+    private Rigidbody2D rb;
+    private Vector3 direction;
+    private float moveSpeed = 3.0f;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     public void Update()
     {
         // Handle screen touches.
@@ -14,23 +24,19 @@ public class PlayerDragController : BaseMobileController
             Touch touch = Input.GetTouch(0);
 
             //Grab the touch location
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 10));
+            touchPosition = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 10));
+            Debug.Log(touchPosition);
 
-            //Get the move postion and lock its Y pos
-            Vector3 movePosition = new Vector3(touchPosition.x, gameObject.transform.position.y, touchPosition.z);
+            //touchPosition.y += 2.0f;
+            direction = touchPosition - transform.position;
 
-            //if we touched too far from the player, do anything
-            if (m_can_move == false)
-                if (Vector3.Distance(movePosition, this.transform.position) < 0.4f)
-                    m_can_move = true;
+            rb.velocity = new Vector2(direction.x, direction.y + 2.0f) * moveSpeed;
 
-            //If the player touched close enough to the sprite we move it.
-            if (m_can_move)
-                this.transform.position = Vector3.Lerp(this.transform.position, movePosition, 1.0f);
-
+            if (touch.phase == TouchPhase.Ended)
+                rb.velocity = Vector2.zero;
         }
-        else
-            m_can_move = false;
     }
+    
+
 
 }
