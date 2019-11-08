@@ -72,7 +72,7 @@ public class GameController : MonoBehaviour {
 
         if (DeathCount >= 3)
         {
-            AdvertScript.ShowAd();
+            //AdvertScript.ShowAd();
             DeathCount = 0;
         }
 

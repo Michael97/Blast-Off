@@ -75,6 +75,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TintColorBlue: {r: 1, g: 0.45815784, b: 0.85781974, a: 1}
-    - _TintColorGreen: {r: 0.14100611, g: 1, b: 0.8962663, a: 1}
-    - _TintColorRed: {r: 0.45563668, g: 1, b: 0.7979824, a: 1}
+    - _TintColorBlue: {r: 0.40511864, g: 0.652461, b: 1, a: 1}
+    - _TintColorGreen: {r: 0.7764193, g: 0.39014095, b: 1, a: 1}
+    - _TintColorRed: {r: 0.5627931, g: 0.6982363, b: 1, a: 1}

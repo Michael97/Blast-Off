@@ -134,4 +134,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
-  particleSystem: {fileID: 134, guid: 3e2720e12eff95c45ab92b8d5b4cccd4, type: 3}
+  particleSystem: {fileID: 3128804123291071820, guid: 88031195211bf8b4dbae4a1fea73d99c,
+    type: 3}

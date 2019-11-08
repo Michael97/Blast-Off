@@ -156,11 +156,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4351258138866770}
     m_Modifications:
-    - target: {fileID: 8581765367949738554, guid: d28e85fc025b5384a99676cd16f080a4,
-        type: 3}
-      propertyPath: m_Name
-      value: TrailParticleSystem
-      objectReference: {fileID: 0}
     - target: {fileID: 8164838731022151808, guid: d28e85fc025b5384a99676cd16f080a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -225,6 +220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581765367949738554, guid: d28e85fc025b5384a99676cd16f080a4,
+        type: 3}
+      propertyPath: m_Name
+      value: TrailParticleSystem
       objectReference: {fileID: 0}
     - target: {fileID: 4774538010883571966, guid: d28e85fc025b5384a99676cd16f080a4,
         type: 3}
