@@ -114,3 +114,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 0}
   colorScript: {fileID: 0}
+  alpha: 0.5

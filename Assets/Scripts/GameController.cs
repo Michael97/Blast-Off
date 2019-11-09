@@ -45,6 +45,10 @@ public class GameController : MonoBehaviour {
         
         DeletePlayer();
 
+
+        if (ZoneScript.ZoneCompleteText != null)
+            ZoneScript.ZoneCompleteText.DisplayText = false;
+
         PlanetScript.DeletePlanet();
 
         GameObject objectController = GameObject.FindGameObjectWithTag("ObjectController");
@@ -90,6 +94,9 @@ public class GameController : MonoBehaviour {
         DeleteObjectStuff(objectController);
 
         ZoneScript.ResetZone();
+
+        if(ZoneScript.ZoneCompleteText != null)
+            ZoneScript.ZoneCompleteText.DisplayText = false;
 
         //Start the spawning objects again
         objectController.GetComponent<ObjectSpawner>().SpawnerStart();

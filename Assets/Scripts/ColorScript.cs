@@ -24,6 +24,8 @@ public class ColorScript : MonoBehaviour
     [SerializeField]
     private new ParticleSystem particleSystem;
 
+    public float alpha;
+
     #endregion
 
 
@@ -74,9 +76,9 @@ public class ColorScript : MonoBehaviour
         var main = particleSystem.main;
 
         if (isPrimaryColor)
-            main.startColor = ColorControllerScript.PrimaryColor;
+            main.startColor = genereateColor(ColorControllerScript.PrimaryColor);
         else
-            main.startColor = ColorControllerScript.SecondaryColor;
+            main.startColor = genereateColor(ColorControllerScript.SecondaryColor);
 
         //particleSystem.Play();
     }
@@ -89,8 +91,21 @@ public class ColorScript : MonoBehaviour
         newColor.b = a_newColor.b;
         newColor.r = a_newColor.r;
         newColor.g = a_newColor.g;
+        newColor.a = alpha;
 
         spriteRenderer.color = newColor;
+    }
+
+    private Color genereateColor(Color a_newColor)
+    {
+        Color newColor = new Color();
+
+        newColor.b = a_newColor.b;
+        newColor.r = a_newColor.r;
+        newColor.g = a_newColor.g;
+        newColor.a = alpha;
+
+        return newColor;
     }
 
 

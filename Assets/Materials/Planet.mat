@@ -56,6 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Alpha: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -75,6 +76,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TintColorBlue: {r: 0.40511864, g: 0.652461, b: 1, a: 1}
-    - _TintColorGreen: {r: 0.7764193, g: 0.39014095, b: 1, a: 1}
-    - _TintColorRed: {r: 0.5627931, g: 0.6982363, b: 1, a: 1}
+    - _TintColorBlue: {r: 0.6862723, g: 1, b: 0.06965339, a: 0.5}
+    - _TintColorGreen: {r: 0.9565764, g: 1, b: 0.8291849, a: 0.5}
+    - _TintColorRed: {r: 0.5081658, g: 0.6487451, b: 1, a: 0.5}

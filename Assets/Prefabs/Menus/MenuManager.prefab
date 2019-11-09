@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathMenuPrefab: {fileID: 5112023651819824157, guid: c126102783950ce4aaf90bb997b473e3,
     type: 3}
-  MainMenuPrefab: {fileID: 114130557937258840, guid: 928a7f6adcd3dd04a9d84dd7ca846bc7,
+  MainMenuPrefab: {fileID: 7606072195736223349, guid: c9877a4a6acc77b43824097c39899445,
     type: 3}
   GameMenuPrefab: {fileID: 114412859951304140, guid: 5a644f070dfec584bbe4986a3be0465c,
     type: 3}
@@ -53,5 +53,5 @@ MonoBehaviour:
     type: 3}
   OptionsMenuPrefab: {fileID: 114109697501719388, guid: 279b1c9a4479b944a84cbca7227cdf10,
     type: 3}
-  HighscoresMenuPrefab: {fileID: 901216734517012556, guid: 091899322d9308648855f76e45ecea8d,
+  ShopMenuPrefab: {fileID: 901216734517012556, guid: 091899322d9308648855f76e45ecea8d,
     type: 3}

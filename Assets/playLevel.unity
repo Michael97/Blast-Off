@@ -686,18 +686,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114785289659472098, guid: 0ccd1328f7879194f8650eca8dcf7828,
-        type: 3}
-      propertyPath: ShopMenuPrefab
-      value: 
-      objectReference: {fileID: 901216734517012556, guid: 091899322d9308648855f76e45ecea8d,
-        type: 3}
-    - target: {fileID: 114785289659472098, guid: 0ccd1328f7879194f8650eca8dcf7828,
-        type: 3}
-      propertyPath: MainMenuPrefab
-      value: 
-      objectReference: {fileID: 7606072195736223349, guid: c9877a4a6acc77b43824097c39899445,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ccd1328f7879194f8650eca8dcf7828, type: 3}
 --- !u!198 &701013494 stripped
@@ -1524,7 +1512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1452878244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2089,6 +2077,26 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5219764237328933011, guid: f794bae362c5a594496b12b3cba3df49,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2149,6 +2157,11 @@ PrefabInstance:
       propertyPath: ObjectSpawnerScript
       value: 
       objectReference: {fileID: 1473899416}
+    - target: {fileID: 5219764237328933012, guid: f794bae362c5a594496b12b3cba3df49,
+        type: 3}
+      propertyPath: alpha
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f794bae362c5a594496b12b3cba3df49, type: 3}
 --- !u!1001 &6218931296007116920
@@ -2167,6 +2180,26 @@ PrefabInstance:
         type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6218931295332386191, guid: 9c2ecb4c4e148054293f8485b4da8af6,
         type: 3}
@@ -2228,5 +2261,10 @@ PrefabInstance:
       propertyPath: ObjectSpawnerScript
       value: 
       objectReference: {fileID: 1473899416}
+    - target: {fileID: 6218931295332386176, guid: 9c2ecb4c4e148054293f8485b4da8af6,
+        type: 3}
+      propertyPath: alpha
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c2ecb4c4e148054293f8485b4da8af6, type: 3}

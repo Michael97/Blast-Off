@@ -22,7 +22,7 @@ public class ZoneController : MonoBehaviour
 
     public Text CompleteLevelTextObject;
     public ParticleSystem particlesystem;
-    private TextManager ZoneCompleteText;
+    public TextManager ZoneCompleteText;
 
     public PlayerController PlayerControllerScript;
 
@@ -154,6 +154,7 @@ public class ZoneController : MonoBehaviour
         for (int i = 0; i < ParticleSystems.Length; i++)
         {
             ParticleSystems[i].GetComponent<ColorScript>().ColorChangeParticle();
+            ParticleSystems[i].Stop();
             ParticleSystems[i].Play();
         }
 
