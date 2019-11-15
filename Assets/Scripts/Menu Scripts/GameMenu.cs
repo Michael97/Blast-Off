@@ -19,7 +19,18 @@ public class GameMenu : SimpleMenu<GameMenu>
 
     public void OnDeath()
     {
-        
+        GameController GameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+
+        if (GameScript.DeathCount >= 3)
+        {
+            GameScript.DeathCount = 0;
+            Hide();
+            RewardedAdsMenu.Show();
+            return;
+        }
+
+        GameScript.DeathCount++;
+
         Hide();
         DeathMenu.Show();
     }

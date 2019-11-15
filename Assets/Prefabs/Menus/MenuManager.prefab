@@ -55,3 +55,5 @@ MonoBehaviour:
     type: 3}
   ShopMenuPrefab: {fileID: 901216734517012556, guid: 091899322d9308648855f76e45ecea8d,
     type: 3}
+  RewardedAdsMenuPrefab: {fileID: 6586147860675358718, guid: 5bf89dc1305d77042a49f6b227df1ef7,
+    type: 3}

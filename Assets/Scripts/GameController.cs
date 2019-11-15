@@ -67,17 +67,9 @@ public class GameController : MonoBehaviour {
     {
         AnalyticsEvent.GameStart();
 
-        DeathCount++;
-
         foreach (ParticleSystem ps in ZoneScript.ParticleSystems)
         {
             ps.Play();
-        }
-
-        if (DeathCount >= 3)
-        {
-            //AdvertScript.ShowAd();
-            DeathCount = 0;
         }
 
         if (ShouldShowTutorial == true)

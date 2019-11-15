@@ -124,6 +124,7 @@ MonoBehaviour:
   isPrimaryColor: 1
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!114 &8486480173356964951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +263,7 @@ MonoBehaviour:
   isPrimaryColor: 0
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!114 &7068498811376999626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7449136325703106585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2.5, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3252259264842651600}
@@ -400,6 +402,7 @@ MonoBehaviour:
   isPrimaryColor: 1
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!114 &4357221852804824704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,6 +541,7 @@ MonoBehaviour:
   isPrimaryColor: 0
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!114 &1879991740482882722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,7 +573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4269227043026446, guid: d23c839aed7dea74b9eeb3c87b879903, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4269227043026446, guid: d23c839aed7dea74b9eeb3c87b879903, type: 3}
       propertyPath: m_LocalPosition.z
@@ -622,6 +626,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3252259264842651600}
     m_Modifications:
+    - target: {fileID: 1424578587530518, guid: a2766065168159147b20777949d3ffc7, type: 3}
+      propertyPath: m_Name
+      value: Pickup (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4014259641726658, guid: a2766065168159147b20777949d3ffc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.25
@@ -665,10 +673,6 @@ PrefabInstance:
     - target: {fileID: 4014259641726658, guid: a2766065168159147b20777949d3ffc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1424578587530518, guid: a2766065168159147b20777949d3ffc7, type: 3}
-      propertyPath: m_Name
-      value: Pickup (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2766065168159147b20777949d3ffc7, type: 3}

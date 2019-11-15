@@ -91,7 +91,7 @@ public class ColorScript : MonoBehaviour
         newColor.b = a_newColor.b;
         newColor.r = a_newColor.r;
         newColor.g = a_newColor.g;
-        newColor.a = alpha;
+        //newColor.a = alpha;
 
         spriteRenderer.color = newColor;
     }

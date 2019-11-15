@@ -638,10 +638,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1606545965997528, guid: 0ccd1328f7879194f8650eca8dcf7828, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4108131592329822, guid: 0ccd1328f7879194f8650eca8dcf7828, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1081,6 +1077,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &890835549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 890835551}
+  - component: {fileID: 890835550}
+  m_Layer: 0
+  m_Name: ScreenshotController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &890835550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890835549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087d87b4dc362554dad123eda7777332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resWidth: 1920
+  resHeight: 1080
+--- !u!4 &890835551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890835549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.1593666, y: -1.6976104, z: 111.04206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999520133
 GameObject:
@@ -2072,31 +2113,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParticleEffect2
       objectReference: {fileID: 0}
-    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219764237328933010, guid: f794bae362c5a594496b12b3cba3df49,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.minScalar
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 5219764237328933011, guid: f794bae362c5a594496b12b3cba3df49,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2157,11 +2173,6 @@ PrefabInstance:
       propertyPath: ObjectSpawnerScript
       value: 
       objectReference: {fileID: 1473899416}
-    - target: {fileID: 5219764237328933012, guid: f794bae362c5a594496b12b3cba3df49,
-        type: 3}
-      propertyPath: alpha
-      value: 0.7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f794bae362c5a594496b12b3cba3df49, type: 3}
 --- !u!1001 &6218931296007116920
@@ -2175,31 +2186,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParticleEffect1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218931295332386190, guid: 9c2ecb4c4e148054293f8485b4da8af6,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.minScalar
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6218931295332386191, guid: 9c2ecb4c4e148054293f8485b4da8af6,
         type: 3}
@@ -2261,10 +2247,5 @@ PrefabInstance:
       propertyPath: ObjectSpawnerScript
       value: 
       objectReference: {fileID: 1473899416}
-    - target: {fileID: 6218931295332386176, guid: 9c2ecb4c4e148054293f8485b4da8af6,
-        type: 3}
-      propertyPath: alpha
-      value: 0.7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c2ecb4c4e148054293f8485b4da8af6, type: 3}

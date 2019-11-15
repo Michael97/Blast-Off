@@ -14,7 +14,6 @@ Shader "Particles/ColorTint" {
 		_TintColorRed("Tint Color Red", Color) = (1,0,0,1)
 		_TintColorGreen("Tint Color Green", Color) = (0,1,0,1)
 		_TintColorBlue("Tint Color Blue", Color) = (0,0,1,1)
-
 	}
 
 		Category{
@@ -38,6 +37,7 @@ Shader "Particles/ColorTint" {
 #pragma fragment frag
 #pragma fragmentoption ARB_precision_hint_fastest
 #pragma multi_compile_particles
+
 
 #include "UnityCG.cginc"
 
