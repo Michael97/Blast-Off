@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: AltSkin04
   icon: {fileID: 21300004, guid: 7e6b5b2b38b403244b11a3f14ac577fa, type: 3}
-  isOwned: 1
+  isOwned: 0
   price: 3000
   color: {r: 0, g: 0.989563, b: 1, a: 1}

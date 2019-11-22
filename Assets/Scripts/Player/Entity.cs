@@ -17,6 +17,7 @@ abstract public class Entity : MonoBehaviour
     public GameObject PlayerTouchController;
     private GameObject playerTouchController;
     public EntityState.State entityState;
+    
 
     #endregion
 
@@ -27,13 +28,7 @@ abstract public class Entity : MonoBehaviour
     {
         entityState = EntityState.State.Alive;
 
-        if (PlayerPrefs.GetString("ChosenControlScheme") == "Tap")
-        {
-            playerTouchController = Instantiate(PlayerTouchController, this.transform);
-            playerTouchController.SetActive(true);
-        }
-        else
-            gameObject.AddComponent<PlayerDragController>();
+        gameObject.AddComponent<PlayerDragController>();
     }
 
     //Checks for collisions with pickups
@@ -52,7 +47,7 @@ abstract public class Entity : MonoBehaviour
             //else the gameobject we collided with is something that should  kill us
             else
             {
-                Dead();
+                Hit();
                 Camera.main.GetComponent<CameraShake>().shakeDuration = 0.05f;
             }
         }
@@ -68,16 +63,33 @@ abstract public class Entity : MonoBehaviour
 
     }
 
+    private void Hit()
+    {
+        GameController gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+
+        //if we have more than 0 lives && if we are not invincible
+        if (gameController.lives > 0 && entityState != EntityState.State.Invincible)
+        {
+            gameController.PlayerHit();
+            GetComponent<Collider2D>().enabled = false;
+            StartCoroutine(GetComponent<PlayerMaterial>().Fade());
+            entityState = EntityState.State.Invincible;
+        }
+        //else if we are not invincible.
+        else if (entityState !=  EntityState.State.Invincible) 
+        {
+            Dead();
+        }
+    }
+
+
     //Called when we dead
     private void Dead()
     {
         //Set the entity state to dead
         entityState = EntityState.State.Dead;
 
-        if (PlayerPrefs.GetString("ChosenControlScheme") == "Tap")
-            playerTouchController.SetActive(false);
-        else
-            Destroy(GetComponent<PlayerDragController>());
+        Destroy(GetComponent<PlayerDragController>());
 
         Handheld.Vibrate();
         Handheld.Vibrate();

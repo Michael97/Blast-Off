@@ -8,12 +8,16 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Analytics;
+using System.Collections.Generic;
 
 public class ZoneController : MonoBehaviour
 {
     #region Public Variables
     public int ZoneLevel;
     public int BaseObstacleCount;
+    public float SpeedModifier;
+
+    public List<string> FeelGoodWords;
 
     public ColorController ColorScript;
     public ObjectSpawner ObjectSpawnerScript;
@@ -41,6 +45,8 @@ public class ZoneController : MonoBehaviour
     //private float timer;
 
     public Timer timer;
+
+    public AsteroidSpawner asteroidSpawner;
 
     public bool nextZone;
 
@@ -74,6 +80,11 @@ public class ZoneController : MonoBehaviour
             //Check to see if we still need the object
             if (!ZoneCompleteText.DisplayText && m_still_playing)
             {
+                if (ZoneLevel > 1)
+                {
+                    asteroidSpawner.state = AsteroidSpawner.State.Normal;
+                    Debug.Log("Normal");
+                }
                 ZoneCompleteText = null; //Set to null, garbage collector kills this
                 PlanetControllerScript.DeletePlanet();
                 PlanetControllerScript.SpawnPlanet();
@@ -93,10 +104,8 @@ public class ZoneController : MonoBehaviour
 
                 PlanetControllerScript.SpeedOff();
 
-                string tempString = "Completed Level " + (ZoneLevel - 1);
-
                 ZoneCompleteText = new TextManager(CompleteLevelTextObject,
-                        particlesystem, tempString, 0.5f, 4.0f);
+                        particlesystem, FeelGoodWords[Random.Range(0, FeelGoodWords.Capacity)], 0.5f, 4.0f);
             }
             else
                 timer.Update();
@@ -120,6 +129,7 @@ public class ZoneController : MonoBehaviour
 
         //Increase the zone level by one
         ZoneLevel++;
+        SpeedModifier += 0.01f;
 
         //Increase the obstacle count by the new zone level
         zoneObstacleCount++;
@@ -136,7 +146,9 @@ public class ZoneController : MonoBehaviour
     public void ResetZone()
     {
         ZoneLevel = 1;
-
+        SpeedModifier = 1;
+        asteroidSpawner.state = AsteroidSpawner.State.Passive;
+        Debug.Log("passive");
         zoneObstacleCount = BaseObstacleCount + ZoneLevel;
 
         //Update the obstacles left 
@@ -176,6 +188,8 @@ public class ZoneController : MonoBehaviour
             ps.Stop();
         }
         PlanetControllerScript.DeletePlanet();
+        asteroidSpawner.state = AsteroidSpawner.State.Passive;
+        Debug.Log("passive");
 
         //Null check 
         if (ZoneCompleteText != null)

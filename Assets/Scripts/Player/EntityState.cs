@@ -12,7 +12,8 @@ public class EntityState : MonoBehaviour {
     public enum State
     {
         Alive = 0,
-        Dead = 1
+        Dead = 1,
+        Invincible = 2
     };
 
 }

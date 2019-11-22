@@ -83,6 +83,7 @@ public class ObjectPoolScript : MonoBehaviour {
     private void SetPositionObject(int x)
     {
         poolObjects[x].gameObject.transform.position = StartPosition;
+        poolObjects[x].gameObject.GetComponent<ObjectMovement>().Speed *= GameObject.FindGameObjectWithTag("ZoneController").GetComponent<ZoneController>().SpeedModifier;
     }
 
     private void CreateNewObject()
@@ -91,6 +92,6 @@ public class ObjectPoolScript : MonoBehaviour {
         poolObjects.Add(Instantiate(SelectedObject, gameObject.transform));
         SetPositionObject(poolObjects.Count - 1);
     }
-
+   
     #endregion
 }

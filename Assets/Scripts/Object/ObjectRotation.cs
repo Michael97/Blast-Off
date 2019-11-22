@@ -34,10 +34,10 @@ public class ObjectRotation : MonoBehaviour {
         
         if (randomNum == 1)
             //counterclockwise
-            rotationDirection = Vector3.forward * rotationSpeedMultplier;
+            rotationDirection = (Vector3.forward) * rotationSpeedMultplier;
         else
             //clockwise
-            rotationDirection = Vector3.back * rotationSpeedMultplier;
+            rotationDirection = (Vector3.back) * rotationSpeedMultplier;
 
     }
 

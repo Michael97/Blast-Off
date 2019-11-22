@@ -25,6 +25,8 @@ public class ObjectSpawner : MonoBehaviour {
 
     public int obstaclesLeft;
 
+    public float speedModifier;
+
     #endregion
 
 
@@ -34,6 +36,8 @@ public class ObjectSpawner : MonoBehaviour {
     private GameObject[] OneSigma;
     private GameObject[] TwoSigma;
     private GameObject[] ThreeSigma;
+
+    public AsteroidSpawner asteroidSpawner;
 
     //The next obstacle to be spawned
     private GameObject ChosenObstacle;
@@ -76,6 +80,11 @@ public class ObjectSpawner : MonoBehaviour {
     //Choose and spawn the next object
     private void SpawnNewObject()
     {
+        if (obstaclesLeft < 3)
+        {
+            asteroidSpawner.state = AsteroidSpawner.State.Passive;
+            Debug.Log("passive");
+        }
         if (obstaclesLeft > 0 && shouldSpawnObject == true)
         {
             ThreeSigmaRule();

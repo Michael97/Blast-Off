@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour {
     #region Private Variables
 
     public int points;
+    public int lives;
 
     #endregion
 
@@ -21,6 +22,7 @@ public class GameController : MonoBehaviour {
     #region Public Variables
 
     public Text scoreText;
+    public Text livesText;
 
     public ZoneController ZoneScript;
 
@@ -44,7 +46,6 @@ public class GameController : MonoBehaviour {
         AnalyticsEvent.LevelQuit(ZoneScript.ZoneLevel);
         
         DeletePlayer();
-
 
         if (ZoneScript.ZoneCompleteText != null)
             ZoneScript.ZoneCompleteText.DisplayText = false;
@@ -77,7 +78,7 @@ public class GameController : MonoBehaviour {
             TutorialGameObject.SetActive(true);
             ShouldShowTutorial = false;
         }
-
+     
         DeletePlayer();
         PlanetScript.DeletePlanet();
 
@@ -99,14 +100,29 @@ public class GameController : MonoBehaviour {
 
         //Reset the points
         points = 0;
+        lives = 3;
         UpdateScore();
+        UpdateLives();
     }
+
 
     //When we collect a point, this is called
     public void AddScore(int newPointsValue)
     {
         points += newPointsValue;
         UpdateScore();
+    }
+
+    public void PlayerHit()
+    {
+        lives--;
+        UpdateLives();
+    }
+
+    public void NewLife()
+    {
+        lives++;
+        UpdateLives();
     }
 
     #endregion
@@ -159,6 +175,15 @@ public class GameController : MonoBehaviour {
             scoreText = GameObject.FindGameObjectWithTag("Points").GetComponent<Text>();
 
         scoreText.text = points.ToString();
+    }
+
+    //Called to update the UI score
+    private void UpdateLives()
+    {
+        if (livesText == null)
+            livesText = GameObject.FindGameObjectWithTag("Lives").GetComponent<Text>();
+
+        livesText.text = $"Lives: {lives.ToString()}";
     }
 
     #endregion

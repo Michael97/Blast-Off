@@ -25,7 +25,6 @@ public class PlayerDragController : BaseMobileController
 
             //Grab the touch location
             touchPosition = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 10));
-            Debug.Log(touchPosition);
 
             //touchPosition.y += 2.0f;
             direction = touchPosition - transform.position;

@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3848c23d6043cb94895556f492e9c513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisableAfterSeconds: 15
+  DisableAfterSeconds: 7.5
 --- !u!82 &639989834685710177
 AudioSource:
   m_ObjectHideFlags: 0

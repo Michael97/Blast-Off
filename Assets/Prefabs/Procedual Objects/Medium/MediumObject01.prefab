@@ -123,6 +123,7 @@ MonoBehaviour:
   isPrimaryColor: 1
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!1 &5052142712864351334
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +247,7 @@ MonoBehaviour:
   isPrimaryColor: 0
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!1 &7215843178432126109
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +371,7 @@ MonoBehaviour:
   isPrimaryColor: 0
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!1 &7720781027225915056
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +495,7 @@ MonoBehaviour:
   isPrimaryColor: 1
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!1 &8963096584196812822
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +619,7 @@ MonoBehaviour:
   isPrimaryColor: 0
   spriteRenderer: {fileID: 0}
   particleSystem: {fileID: 0}
+  alpha: 0
 --- !u!1001 &929495524433577661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -622,6 +627,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1952602229315245402}
     m_Modifications:
+    - target: {fileID: 1424578587530518, guid: a2766065168159147b20777949d3ffc7, type: 3}
+      propertyPath: m_Name
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4014259641726658, guid: a2766065168159147b20777949d3ffc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.25
@@ -665,10 +674,6 @@ PrefabInstance:
     - target: {fileID: 4014259641726658, guid: a2766065168159147b20777949d3ffc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1424578587530518, guid: a2766065168159147b20777949d3ffc7, type: 3}
-      propertyPath: m_Name
-      value: Pickup (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2766065168159147b20777949d3ffc7, type: 3}

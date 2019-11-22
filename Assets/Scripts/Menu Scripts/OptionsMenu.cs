@@ -7,7 +7,7 @@ public class OptionsMenu : SimpleMenu<OptionsMenu>
     public Toggle SoundEffectsToggle;
     public Text ChosenControlScheme;
 
-    public string[] ControlSchemes = { "Tap", "Swipe" };
+    public string[] ControlSchemes = { "Swipe", "Swipe" };
     private int counter;
 
     new void OnEnable()
@@ -15,7 +15,7 @@ public class OptionsMenu : SimpleMenu<OptionsMenu>
         //Grab the playerprefX bools and change the toggle state
         MusicToggle.isOn = PlayerPrefsX.GetBool("MusicToggle", true);
         SoundEffectsToggle.isOn = PlayerPrefsX.GetBool("SoundEffectsToggle", true);
-        ChosenControlScheme.text = PlayerPrefs.GetString("ChosenControlScheme", "Tap");
+        ChosenControlScheme.text = PlayerPrefs.GetString("ChosenControlScheme", "Swipe");
     }
 
     public void ChangeControlPress()

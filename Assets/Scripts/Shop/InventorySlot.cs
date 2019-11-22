@@ -13,6 +13,7 @@ public class InventorySlot : MonoBehaviour
     {
         image.sprite = item.icon;
         image.color = item.color;
+        Debug.Log($"{item.isOwned}");
 
         if (item.isOwned)
         {

@@ -987,7 +987,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
+  lives: 0
   scoreText: {fileID: 0}
+  livesText: {fileID: 0}
   ZoneScript: {fileID: 1701088416}
   DeathCount: 0
   AdvertScript: {fileID: 1452878244}
@@ -1628,6 +1630,8 @@ MonoBehaviour:
   ObjectPoolScript_: {fileID: 1473899418}
   ZoneScript: {fileID: 1701088416}
   obstaclesLeft: 10
+  speedModifier: 0
+  asteroidSpawner: {fileID: 1804182520}
   shouldSpawnObject: 1
   ObjectSpawnInterval: 2
 --- !u!4 &1473899417
@@ -1955,7 +1959,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ZoneLevel: 0
-  BaseObstacleCount: 1
+  BaseObstacleCount: 6
+  SpeedModifier: 0
+  FeelGoodWords:
+  - You're Awesome!
+  - You're a star!
+  - You're Amazing!
+  - That was epic!
+  - You're breathtaking!
+  - You're formidable!
+  - You're majestic!
+  - You're something else!
+  - You're mind-blowing!
+  - You're sublime!
+  - You're glorious!
+  - You're superb!
+  - You're transcendent!
   ColorScript: {fileID: 1969347539}
   ObjectSpawnerScript: {fileID: 1473899416}
   ParticleSystems:
@@ -1967,6 +1986,7 @@ MonoBehaviour:
   PlanetControllerScript: {fileID: 999520134}
   m_still_playing: 0
   zoneObstacleCount: 0
+  asteroidSpawner: {fileID: 1804182520}
   nextZone: 0
 --- !u!4 &1701088417
 Transform:
@@ -1981,6 +2001,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1804182519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804182522}
+  - component: {fileID: 1804182521}
+  - component: {fileID: 1804182520}
+  m_Layer: 0
+  m_Name: AsteroidController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1804182520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804182519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c14c1cadd2d2c542a2c0b5002ff7802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPoolScript_: {fileID: 1804182521}
+  ChosenObstacle: {fileID: 7433178088967913451, guid: 56571bd5fcba33f49a310a53c0c8c837,
+    type: 3}
+  state: 0
+--- !u!114 &1804182521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804182519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9997bd64c1b344b84cba8f03bb8ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolObjects: []
+--- !u!4 &1804182522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804182519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1969347538
 GameObject:
