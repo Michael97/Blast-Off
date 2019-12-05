@@ -31,7 +31,7 @@ public class Pickup : MonoBehaviour {
         gameObject.SetActive(false);
         if (transform.GetComponentInParent<AudioSource>().isActiveAndEnabled)
             transform.GetComponentInParent<AudioSource>().Play();
-        Handheld.Vibrate();
+        BOVibrate.Vibrate();
     }
 
     #endregion

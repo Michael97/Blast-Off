@@ -91,8 +91,8 @@ abstract public class Entity : MonoBehaviour
 
         Destroy(GetComponent<PlayerDragController>());
 
-        Handheld.Vibrate();
-        Handheld.Vibrate();
+        BOVibrate.Vibrate();
+        BOVibrate.Vibrate();
 
         //Disable the renderer and collider
         gameObject.GetComponent<Renderer>().enabled = false;

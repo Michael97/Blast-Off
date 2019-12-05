@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FontAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300002, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300004, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300006, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300008, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300010, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300012, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300014, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300016, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300018, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300020, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300022, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300024, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300026, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300028, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300030, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300032, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300034, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300036, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300038, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300040, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300042, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300044, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300046, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300048, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300050, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300052, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300054, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300056, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300058, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300060, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300062, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300064, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300066, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300068, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    - {fileID: 21300070, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+    totalSpriteSurfaceArea: 2359296
+    bindAsDefault: 1
+    storedHash:
+      serializedVersion: 2
+      Hash: 5295955b38841be546003ba9e0a00052
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300068, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300070, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300054, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300060, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300052, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300062, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300050, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300064, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300048, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300066, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300046, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300044, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300036, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300042, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300038, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300040, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300024, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300026, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300020, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300058, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300022, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300056, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300032, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300034, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300028, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300030, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300018, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300016, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300014, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300012, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300010, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300008, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300006, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300004, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300002, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  - {fileID: 21300000, guid: 6f74f3b3c07e5f94eac29a2e42a7142a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - BO_Font_Full_34
+  - BO_Font_Full_35
+  - BO_Font_Full_27
+  - BO_Font_Full_30
+  - BO_Font_Full_26
+  - BO_Font_Full_31
+  - BO_Font_Full_25
+  - BO_Font_Full_32
+  - BO_Font_Full_24
+  - BO_Font_Full_33
+  - BO_Font_Full_23
+  - BO_Font_Full_22
+  - BO_Font_Full_18
+  - BO_Font_Full_21
+  - BO_Font_Full_19
+  - BO_Font_Full_20
+  - BO_Font_Full_12
+  - BO_Font_Full_13
+  - BO_Font_Full_10
+  - BO_Font_Full_29
+  - BO_Font_Full_11
+  - BO_Font_Full_28
+  - BO_Font_Full_16
+  - BO_Font_Full_17
+  - BO_Font_Full_14
+  - BO_Font_Full_15
+  - BO_Font_Full_9
+  - BO_Font_Full_8
+  - BO_Font_Full_7
+  - BO_Font_Full_6
+  - BO_Font_Full_5
+  - BO_Font_Full_4
+  - BO_Font_Full_3
+  - BO_Font_Full_2
+  - BO_Font_Full_1
+  - BO_Font_Full_0
+  m_Tag: FontAtlas
+  m_IsVariant: 0

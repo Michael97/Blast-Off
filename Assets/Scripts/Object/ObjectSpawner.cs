@@ -58,6 +58,8 @@ public class ObjectSpawner : MonoBehaviour {
     //Run when the game level starts
     public void SpawnerStart()
     {
+        Random.seed = (int)System.DateTime.Now.Ticks;
+
         shouldSpawnObject = true;
 
         //Call SpawnNewObject after 2 secs, every 5 secs
@@ -144,6 +146,7 @@ public class ObjectSpawner : MonoBehaviour {
 
         do
         {
+
             u = 2.0f * Random.value - 1.0f;
             v = 2.0f * Random.value - 1.0f;
             s = u * u + v * v;
@@ -152,7 +155,7 @@ public class ObjectSpawner : MonoBehaviour {
 
         float fac = Mathf.Sqrt(-2.0f * Mathf.Log(s) / s);
         r0 = v * fac;
-
+        
         return u * fac * standardDev + mean;
 
     }

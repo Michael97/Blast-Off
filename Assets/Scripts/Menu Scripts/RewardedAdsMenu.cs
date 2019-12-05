@@ -7,7 +7,7 @@ public class RewardedAdsMenu : SimpleMenu<RewardedAdsMenu>, IUnityAdsListener
 {
 
 #if UNITY_IOS
-    private string gameId = "3209509";
+    private string gameId = "3209508";
 #elif UNITY_ANDROID
     private string gameId = "3209509";
 #endif

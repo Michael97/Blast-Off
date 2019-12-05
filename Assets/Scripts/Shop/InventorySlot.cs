@@ -8,11 +8,25 @@ public class InventorySlot : MonoBehaviour
     public Image image;
     public Text priceText;
     public Item item;
+    public Image chosenImage;
+
+    public PlayerSpawner playerSpawner;
+
+    private void Update()
+    {
+        if (playerSpawner.ChosenPlayerItem != item && chosenImage.enabled == true)
+            chosenImage.enabled = false;
+    }
 
     private void OnEnable()
     {
+        playerSpawner = GameObject.FindGameObjectWithTag("PlayerSpawner").GetComponent<PlayerSpawner>();
         image.sprite = item.icon;
         image.color = item.color;
+        if (playerSpawner.ChosenPlayerItem == item)
+            chosenImage.enabled = true;
+        else
+            chosenImage.enabled = false;
         Debug.Log($"{item.isOwned}");
 
         if (item.isOwned)
@@ -42,13 +56,16 @@ public class InventorySlot : MonoBehaviour
                 item.isOwned = true;
                 priceText.text = "Owned";
                 SetAlpha(1.0f);
-                GameObject.FindGameObjectWithTag("GameMenu").GetComponent<ShopMenu>().UpdateText();
+                GameObject.FindGameObjectWithTag("ShopMenu").GetComponent<ShopMenu>().UpdateText();
                 Debug.Log("We own it!");
             }
         }
 
         if (item.isOwned == true)
-            GameObject.FindGameObjectWithTag("PlayerSpawner").GetComponent<PlayerSpawner>().ChosenPlayerItem = item;
+        {
+            playerSpawner.ChosenPlayerItem = item;
+            chosenImage.enabled = true;
+        }
     }
 
     private void SetAlpha(float a_alpha)

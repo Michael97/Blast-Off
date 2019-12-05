@@ -9,11 +9,12 @@ public class PlayerDragController : BaseMobileController
     private Vector3 touchPosition;
     private Rigidbody2D rb;
     private Vector3 direction;
-    private float moveSpeed = 3.0f;
+    private float moveSpeed = 4.5f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        PlayerControllerScript = GetComponent<PlayerController>();
     }
 
     public void Update()
@@ -29,12 +30,33 @@ public class PlayerDragController : BaseMobileController
             //touchPosition.y += 2.0f;
             direction = touchPosition - transform.position;
 
-            rb.velocity = new Vector2(direction.x, direction.y + 2.0f) * moveSpeed;
+            if (direction.x >= 0.3)
+            {
+                PlayerControllerScript.movement = PlayerController.Movement.Right;
+            }
+            else if (direction.x <= -0.3)
+            {
+                PlayerControllerScript.movement = PlayerController.Movement.Left;
+            }
+            else
+            {
+                PlayerControllerScript.movement = PlayerController.Movement.Neutral;
+            }
+
+
+            rb.velocity = new Vector2(direction.x, direction.y + 1.5f) * moveSpeed;
 
             if (touch.phase == TouchPhase.Ended)
+            {
+                PlayerControllerScript.movement = PlayerController.Movement.Neutral;
                 rb.velocity = Vector2.zero;
+            }
+
+            PlayerControllerScript.Animations();
         }
     }
+
+
     
 
 

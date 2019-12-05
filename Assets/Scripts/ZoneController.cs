@@ -126,6 +126,7 @@ public class ZoneController : MonoBehaviour
             return;
 
         AnalyticsEvent.LevelComplete(ZoneLevel);
+        Debug.Log(ZoneLevel);
 
         //Increase the zone level by one
         ZoneLevel++;

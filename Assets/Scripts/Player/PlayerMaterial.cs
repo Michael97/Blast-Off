@@ -17,15 +17,19 @@ public class PlayerMaterial : MonoBehaviour
     public Color ThirdColor;
     public float alpha;
 
-    // Start is called before the first frame update
-    void Start()
+    public void SetNewMat(Material _mat)
     {
-
+        mat = _mat;
     }
 
     public void UpdateColor()
     {
         mat = GetComponent<Renderer>().sharedMaterial;
+
+        PrimaryColor = mat.GetColor("_TintColorRed");
+        SecondaryColor = mat.GetColor("_TintColorGreen");
+        ThirdColor = mat.GetColor("_TintColorBlue");
+
 
         if (mat == null)
             return;

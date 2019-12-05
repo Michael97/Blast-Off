@@ -17,3 +17,9 @@ MonoBehaviour:
   isOwned: 0
   price: 15000
   color: {r: 1, g: 1, b: 1, a: 0}
+  animationSprites:
+  - {fileID: 21300000, guid: 00f8511230cf131468e507b4f091a3e0, type: 3}
+  - {fileID: 21300002, guid: 00f8511230cf131468e507b4f091a3e0, type: 3}
+  - {fileID: 21300004, guid: 00f8511230cf131468e507b4f091a3e0, type: 3}
+  - {fileID: 21300006, guid: 00f8511230cf131468e507b4f091a3e0, type: 3}
+  - {fileID: 21300008, guid: 00f8511230cf131468e507b4f091a3e0, type: 3}

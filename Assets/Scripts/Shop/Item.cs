@@ -10,4 +10,5 @@ public class Item : ScriptableObject
     public bool isOwned = false;
     public int price = 0;
     public Color color = Color.clear;
+    public List<Sprite> animationSprites = new List<Sprite>();
 }

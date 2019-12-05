@@ -30,10 +30,6 @@ public class GameController : MonoBehaviour {
     public AdvertController AdvertScript;
     public PlanetController PlanetScript;
 
-
-    public bool ShouldShowTutorial;
-    public GameObject TutorialGameObject;
-
     public ParticleSystem ParticleSystemCube;
 
     #endregion
@@ -73,12 +69,6 @@ public class GameController : MonoBehaviour {
             ps.Play();
         }
 
-        if (ShouldShowTutorial == true)
-        {
-            TutorialGameObject.SetActive(true);
-            ShouldShowTutorial = false;
-        }
-     
         DeletePlayer();
         PlanetScript.DeletePlanet();
 
@@ -163,7 +153,6 @@ public class GameController : MonoBehaviour {
     // Use this for initialization
     private void Awake()
     {
-        ShouldShowTutorial = true;
         points = 0;
     }
 

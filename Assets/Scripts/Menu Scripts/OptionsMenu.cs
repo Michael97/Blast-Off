@@ -5,6 +5,7 @@ public class OptionsMenu : SimpleMenu<OptionsMenu>
 {
     public Toggle MusicToggle;
     public Toggle SoundEffectsToggle;
+    public Toggle VibrateToggle;
     public Text ChosenControlScheme;
 
     public string[] ControlSchemes = { "Swipe", "Swipe" };
@@ -12,9 +13,11 @@ public class OptionsMenu : SimpleMenu<OptionsMenu>
 
     new void OnEnable()
     {
+        base.OnEnable();
         //Grab the playerprefX bools and change the toggle state
         MusicToggle.isOn = PlayerPrefsX.GetBool("MusicToggle", true);
         SoundEffectsToggle.isOn = PlayerPrefsX.GetBool("SoundEffectsToggle", true);
+        VibrateToggle.isOn = PlayerPrefsX.GetBool("VibrateToggle", true);
         ChosenControlScheme.text = PlayerPrefs.GetString("ChosenControlScheme", "Swipe");
     }
 
@@ -38,6 +41,7 @@ public class OptionsMenu : SimpleMenu<OptionsMenu>
     {
         PlayerPrefsX.SetBool("MusicToggle", MusicToggle.isOn);
         PlayerPrefsX.SetBool("SoundEffectsToggle", SoundEffectsToggle.isOn);
+        PlayerPrefsX.SetBool("VibrateToggle", VibrateToggle.isOn);
         PlayerPrefs.SetString("ChosenControlScheme", ChosenControlScheme.text);
         OnBackPressed();
     }

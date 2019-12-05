@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d8d14840a0dd1c04c848f4e63932beaa
+guid: ec88597e2ed8cf04fb08827782a88df7
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Joystix
+  fontName: Zig
   fontNames:
-  - Joystix
+  - Zig
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

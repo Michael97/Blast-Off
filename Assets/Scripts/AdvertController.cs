@@ -10,15 +10,15 @@ public class AdvertController : MonoBehaviour
 
     void Start()
     {
-        Advertisement.Initialize(gameId, testMode);
-        StartCoroutine(ShowBannerWhenReady());
+        Advertisement.Initialize(gameId);
+        //StartCoroutine(ShowBannerWhenReady());
     }
 
     public void ShowAd()
     {
-        Advertisement.Show();
+        //Advertisement.Show();
     }
-
+    /*
     IEnumerator ShowBannerWhenReady()
     {
         while (!Advertisement.IsReady(placementId))
@@ -26,5 +26,5 @@ public class AdvertController : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
         Advertisement.Banner.Show(placementId);
-    }
+    }*/
 }

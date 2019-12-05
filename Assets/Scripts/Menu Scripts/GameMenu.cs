@@ -3,8 +3,6 @@ using UnityEngine.Analytics;
 
 public class GameMenu : SimpleMenu<GameMenu>
 {
-
-
     public override void OnBackPressed()
     {
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().StopGame();
@@ -21,11 +19,12 @@ public class GameMenu : SimpleMenu<GameMenu>
     {
         GameController GameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
 
-        if (GameScript.DeathCount >= 3)
+        if (GameScript.DeathCount >= 0)
         {
             GameScript.DeathCount = 0;
             Hide();
             RewardedAdsMenu.Show();
+            
             return;
         }
 

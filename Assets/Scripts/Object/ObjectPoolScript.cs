@@ -53,9 +53,10 @@ public class ObjectPoolScript : MonoBehaviour {
         bool foundObject = false;
 
         foreach (GameObject _object in poolObjects)
-        { 
+        {
+ 
             //if we found the right object and its inactive, then we can use it!
-            if (_object.tag == SelectedObject.tag && _object.activeInHierarchy == false)
+            if (_object.name == $"{SelectedObject.name}(Clone)" && _object.activeInHierarchy == false)
             {
                 ActivateObject(x);
                 foundObject = true;

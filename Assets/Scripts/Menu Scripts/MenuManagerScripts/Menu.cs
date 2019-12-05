@@ -16,6 +16,7 @@ public abstract class Menu<T> : Menu where T : Menu<T>
 
     public void OnEnable()
     {
+        Debug.Log("Camera Added");
         GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         GetComponent<Canvas>().sortingLayerName = "Foreground";
     }

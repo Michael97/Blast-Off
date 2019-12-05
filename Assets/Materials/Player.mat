@@ -89,5 +89,5 @@ Material:
     - _GlowColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _TintColorBlue: {r: 1, g: 1, b: 1, a: 1}
-    - _TintColorGreen: {r: 0, g: 0, b: 0, a: 1}
+    - _TintColorGreen: {r: 1, g: 1, b: 1, a: 1}
     - _TintColorRed: {r: 1, g: 1, b: 1, a: 1}

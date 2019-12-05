@@ -15,6 +15,7 @@ public class DeathMenu : SimpleMenu<DeathMenu>
 
     new void OnEnable()
     {
+        base.OnEnable();
         GameScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         Grade = transform.Find("Grade").gameObject;
         if (GameScript.points < 100)
